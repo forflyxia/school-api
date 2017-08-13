@@ -5,7 +5,7 @@ import com.xstudio.school.contract.base.BaseRequest;
 /**
  * Created by wangqc on 2017/8/6.
  */
-public class SearchProductRequest extends BaseRequest {
+public class SearchProductByShopRequest extends BaseRequest {
     /*
    shop id
     */
@@ -26,6 +26,17 @@ public class SearchProductRequest extends BaseRequest {
     }
     public void setUserId(Long userId) {
         this.userId = userId;
+    }
+
+    /*
+    sort type
+    */
+    private Integer sortType;
+    public Integer getSortType() {
+        return sortType;
+    }
+    public void setSortType(Integer sortType) {
+        this.sortType = sortType;
     }
 }
 

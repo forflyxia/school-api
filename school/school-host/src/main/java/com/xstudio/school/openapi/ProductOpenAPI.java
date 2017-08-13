@@ -1,8 +1,8 @@
 package com.xstudio.school.openapi;
 
 import com.xstudio.school.contract.SearchCategoryResponse;
-import com.xstudio.school.contract.SearchProductRequest;
-import com.xstudio.school.contract.SearchProductResponse;
+import com.xstudio.school.contract.SearchProductByShopRequest;
+import com.xstudio.school.contract.SearchProductByShopResponse;
 import com.xstudio.school.contract.Shop.ShopDTO;
 import com.xstudio.school.contract.category.CategoryDTO;
 
@@ -20,9 +20,9 @@ public class ProductOpenAPI {
     @Path("/SearchProduct")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public SearchProductResponse SearchProduct(SearchProductRequest request)
+    public SearchProductByShopResponse SearchProductByShop(SearchProductByShopRequest request)
     {
-        SearchProductResponse response=new SearchProductResponse();
+        SearchProductByShopResponse response=new SearchProductByShopResponse();
         ShopDTO shopDTO=new ShopDTO();
         shopDTO.setShopId(request.getShopId());
         shopDTO.setMinimumDeliveryAmount(20);
@@ -37,7 +37,7 @@ public class ProductOpenAPI {
     public SearchCategoryResponse SearchCategory(@FormParam("shopId") Long shopId)
     {
         SearchCategoryResponse response=new SearchCategoryResponse();
-        List<CategoryDTO> categoryDTOList=new ArrayList<CategoryDTO>();
+        List<CategoryDTO> categoryDTOList=new ArrayList<>();
         response.setCategoryDTOList(categoryDTOList);
         response.setIsSuccess(true);
         return response;
@@ -45,10 +45,10 @@ public class ProductOpenAPI {
     @POST
     @Path("/SearchPicture")
     @Produces(MediaType.APPLICATION_JSON)
-    public SearchProductResponse SearchPicture(@FormParam("shopId") Long shopId)
+    public SearchProductByShopResponse SearchPicture(@FormParam("shopId") Long shopId)
     {
         //输出带有图片URL
-        SearchProductResponse response=new SearchProductResponse();
+        SearchProductByShopResponse response=new SearchProductByShopResponse();
         response.setIsSuccess(true);
         return response;
     }

@@ -16,7 +16,7 @@ import java.util.Calendar;
  * Created by wangqc on 2017/8/6.
  */
 @Path("/OrderManage")
-public class OrderManageOpenAPI {
+public class OrderCreateOpenAPI {
     @POST
     @Path("/OrderCreate")
     @Produces(MediaType.APPLICATION_JSON)

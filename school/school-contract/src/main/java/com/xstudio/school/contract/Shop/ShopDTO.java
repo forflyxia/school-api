@@ -34,4 +34,15 @@ public class ShopDTO {
     public void setMinimumDeliveryAmount(double minimumDeliveryAmount) {
         this.minimumDeliveryAmount = minimumDeliveryAmount;
     }
+
+    /*
+    shop Pictures
+    */
+    private String shopPictures;
+    public String getShopPictures() {
+        return shopPictures;
+    }
+    public void setShopPictures(String shopPictures) {
+        this.shopPictures = shopPictures;
+    }
 }

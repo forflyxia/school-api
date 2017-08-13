@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by wangqc on 2017/8/6.
  */
-public class SearchProductResponse extends BaseResponse {
+public class SearchProductByShopResponse extends BaseResponse {
 
     /*
      shop information
