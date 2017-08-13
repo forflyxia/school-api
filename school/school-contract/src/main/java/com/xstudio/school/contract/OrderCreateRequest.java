@@ -69,13 +69,13 @@ public class OrderCreateRequest extends BaseRequest {
     }
 
     /*
-    Delivery Information
+    Product Information list
     */
-    private ProductInfo productInfo;
-    public ProductInfo getProductInfo() {
-        return productInfo;
+    private List<ProductInfo> productInfoList;
+    public List<ProductInfo> getProductInfo() {
+        return productInfoList;
     }
-    public void setProductInfo(ProductInfo productInfo) {
-        this.productInfo = productInfo;
+    public void setProductInfo(List<ProductInfo> productInfoList) {
+        this.productInfoList = productInfoList;
     }
 }

@@ -29,16 +29,7 @@ public class ShopOrderManageOpenAPI {
         response.setIsSuccess(true);
         return response;
     }
-    @POST
-    @Path("/ReplyComment")
-    @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_JSON)
-    public ReplyCommentResponse ReplyComment(ReplyCommentRequest request)
-    {
-        ReplyCommentResponse response=new ReplyCommentResponse();
-        response.setIsSuccess(true);
-        return response;
-    }
+
     @POST
     @Path("/OrderReceiving")
     @Produces(MediaType.APPLICATION_JSON)

@@ -31,17 +31,6 @@ public class OrderManageOpenAPI {
         return response;
     }
     @POST
-    @Path("/Comment")
-    @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_JSON)
-    public CommentResponse Comment(CommentRequest request)
-    {
-        CommentResponse response=new CommentResponse();
-        response.setIsSuccess(true);
-        response.setCommentId(11L);
-        return response;
-    }
-    @POST
     @Path("/Reminder")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
