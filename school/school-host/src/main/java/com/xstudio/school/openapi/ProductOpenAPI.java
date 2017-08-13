@@ -1,8 +1,6 @@
 package com.xstudio.school.openapi;
 
-import com.xstudio.school.contract.SearchCategoryResponse;
-import com.xstudio.school.contract.SearchProductByShopRequest;
-import com.xstudio.school.contract.SearchProductByShopResponse;
+import com.xstudio.school.contract.*;
 import com.xstudio.school.contract.Shop.ShopDTO;
 import com.xstudio.school.contract.category.CategoryDTO;
 
@@ -17,7 +15,7 @@ import java.util.List;
 @Path("/Product")
 public class ProductOpenAPI {
     @POST
-    @Path("/SearchProduct")
+    @Path("/SearchProductByShop")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public SearchProductByShopResponse SearchProductByShop(SearchProductByShopRequest request)
@@ -34,7 +32,18 @@ public class ProductOpenAPI {
     @POST
     @Path("/SearchCategory")
     @Produces(MediaType.APPLICATION_JSON)
-    public SearchCategoryResponse SearchCategory(@FormParam("shopId") Long shopId)
+    public SearchCategoryResponse SearchCategory()
+    {
+        SearchCategoryResponse response=new SearchCategoryResponse();
+        List<CategoryDTO> categoryDTOList=new ArrayList<>();
+        response.setCategoryDTOList(categoryDTOList);
+        response.setIsSuccess(true);
+        return response;
+    }
+    @POST
+    @Path("/SearchShopCategory")
+    @Produces(MediaType.APPLICATION_JSON)
+    public SearchCategoryResponse SearchShopCategory(@FormParam("shopId") Long shopId)
     {
         SearchCategoryResponse response=new SearchCategoryResponse();
         List<CategoryDTO> categoryDTOList=new ArrayList<>();
@@ -49,6 +58,17 @@ public class ProductOpenAPI {
     {
         //输出带有图片URL
         SearchProductByShopResponse response=new SearchProductByShopResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/SearchProduct")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public SearchProductResponse SearchProduct(SearchProductRequest request)
+    {
+        SearchProductResponse response=new SearchProductResponse();
         response.setIsSuccess(true);
         return response;
     }

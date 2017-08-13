@@ -15,7 +15,7 @@ import java.util.Calendar;
 /**
  * Created by wangqc on 2017/8/6.
  */
-@Path("/OrderManage")
+@Path("/Order")
 public class OrderCreateOpenAPI {
     @POST
     @Path("/OrderCreate")

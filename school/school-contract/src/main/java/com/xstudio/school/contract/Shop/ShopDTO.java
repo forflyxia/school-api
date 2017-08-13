@@ -45,4 +45,16 @@ public class ShopDTO {
     public void setShopPictures(String shopPictures) {
         this.shopPictures = shopPictures;
     }
+
+
+    /*
+    position
+    */
+    private Integer position;
+    public Integer getProductCategory() {
+        return position;
+    }
+    public void setProductCategory(Integer position) {
+        this.position = position;
+    }
 }

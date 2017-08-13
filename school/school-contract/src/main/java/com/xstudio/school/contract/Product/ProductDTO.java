@@ -45,4 +45,6 @@ public class ProductDTO {
     public void setProductCategory(Integer productCategory) {
         this.productCategory = productCategory;
     }
+
+
 }
