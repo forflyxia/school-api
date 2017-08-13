@@ -18,6 +18,6 @@
 
     <context:annotation-config />
     <aop:aspectj-autoproxy proxy-target-class="true" />
-    <context:component-scan base-package="com.xstudio.school.service" />
+    <context:component-scan base-package="com.xstudio.school.domain" />
 
 </beans>

@@ -1,0 +1,52 @@
+﻿<%-- 
+Name:           entity.cst
+Author:         hbxia
+Description:    
+--%>
+
+<%@ Template Language="C#" TargetLanguage="Java" ResponseEncoding="UTF-8" %>
+
+<%@ Assembly Name="SchemaExplorer" %>
+<%@ Assembly Name="CodeSmith.BaseTemplates" %>
+<%@ Import Namespace="SchemaExplorer" %>
+<!-- #include file="../../../infrastructure.cst" -->
+
+<%@ Property Name="SourceTable" Type="SchemaExplorer.TableSchema" Description="目标数据表" Category="Context" %>
+<%@ Property Name="Namespace" Type="System.String" Default="" Category="Context" %>
+<%@ Property Name="TablePrefix" Type="System.String" Optional="True" Default="" Category="Context" %>
+
+/************************************************************************************************************************************************
+ * FileName:       <%=GetClassName(SourceTable) %>PO.java
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+package <%=Namespace%>.domain.po.<%=SourceTable.Database.Name.ToLower()%>;
+
+
+import java.util.Date;
+
+/**
+ *  <%=SourceTable.Description %>
+ */
+public class <%=GetClassName(SourceTable) %>PO
+{
+    <%foreach(ColumnSchema column in SourceTable.Columns) { %>      
+	private <%=GetCSharpVariableType(column) %> <%=FirstLetterToCamel(column.Name) %>;
+    <%} %>
+
+    <%foreach(ColumnSchema column in SourceTable.Columns) { %>
+    /**
+     *  <%=column.Description %> getter
+     */
+	public <%=GetCSharpVariableType(column) %> Get<%=FirstLetterToPascal(column.Name) %>() {
+        return <%=FirstLetterToCamel(column.Name) %>;
+    }
+    
+    /**
+     *  <%=column.Description %> setter
+     */
+	public void set<%=FirstLetterToPascal(column.Name) %>(<%=GetCSharpVariableType(column) %> <%=FirstLetterToCamel(column.Name) %>) {
+        this.<%=FirstLetterToCamel(column.Name) %> = <%=FirstLetterToCamel(column.Name) %>;
+    }
+    <%} %>
+}

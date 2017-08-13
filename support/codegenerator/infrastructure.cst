@@ -1,0 +1,384 @@
+﻿<%-- 
+Name:
+Author: 
+Description: 
+--%>
+<%@ Template Language="C#" TargetLanguage="Text" %>
+<%@ Assembly Name="SchemaExplorer" %>
+<%@ Import Namespace="SchemaExplorer" %>
+<%@ Assembly Name="System.Data" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<%@ Import Namespace="System.Text.RegularExpressions" %>
+
+<script runat="template">
+
+public Dictionary<string, string> moudlesConfigMap = new Dictionary<string, string>
+{
+    {"merchant", "Merchant"},
+    {"user", "User"},
+    {"order", "Order"},
+    {"school", "School"},
+    {"product", "Product"},
+	{"basic", "Basic"},
+    {"image", "Image"},
+    {"promotion", "Promotion"},
+};
+
+public Dictionary<string, string> keywordsReplaceConfigMap = new Dictionary<string, string>
+{
+    {"id", "Id"},
+};
+
+public string GetCSharpVariableType(ColumnSchema column)
+{
+    if (column.Name.EndsWith("TypeCode")) return column.Name;
+    
+    switch (column.DataType)
+    {
+        case DbType.AnsiString: return "String";
+        case DbType.AnsiStringFixedLength: return "String";
+        case DbType.String: return "String";
+        case DbType.StringFixedLength: return "String";
+        case DbType.Binary: return "Byte[]";
+        case DbType.Byte: return "Byte";
+        case DbType.SByte: return "Byte";
+        case DbType.Currency: return "Double";
+        case DbType.Decimal: return "Double";
+        case DbType.Double: return "Double";
+        case DbType.VarNumeric: return "Double";
+        case DbType.Date: return "Date";
+        case DbType.DateTime: return "Date";
+        case DbType.Guid: return "Guid";
+        case DbType.Int16: return "Integer";
+        case DbType.Int32: return "Integer";
+        case DbType.Int64: return "Long";
+        case DbType.Object: return "Object";
+        case DbType.Boolean: return "Boolean";
+        case DbType.Single: return "float";
+        case DbType.Time: return "TimeSpan";
+        case DbType.UInt16: return "Short";
+        case DbType.UInt32: return "Integer";
+        case DbType.UInt64: return "Long";
+        
+        default:
+        {
+            return "__UNKNOWN__" + column.NativeType;
+        }
+    }
+}
+
+public string GetClassName(TableSchema sourceTable)
+{
+	return GetClassName(sourceTable.Name);
+}
+
+public string GetClassName(string tableName)
+{
+    string str1 = tableName;
+	string str2 = str1.Substring(str1.IndexOf('_') + 1);
+	string str3 = "";
+	int index = 0;
+	while (true)
+	{
+		if (index < str2.Split(new char[1] {'_'}).Length)
+		{
+			str3 = str3 + str2.Split(new char[1] {'_'})[index].Substring(0, 1).ToUpper() + str2.Split(new char[1] {'_'})[index].Substring(1).ToLower();
+			++index;
+		}
+		else
+		{ 
+			break;
+		}
+	}
+	return str3;
+}
+
+public string GetTablePrefix(TableSchema sourceTable, bool firstToUpper = false)
+{
+    string tableName = sourceTable.Name;
+    int index = tableName.IndexOf("_");
+    if (index > 0)
+    {
+        string prefix = tableName.Substring(0, index);
+        if(firstToUpper)
+        {
+            return FirstLetterToPascal(prefix);
+        }
+        return prefix;
+        
+    }
+    return string.Empty;
+}
+
+public string GetFolderName(TableSchema sourceTable, string defaultForlderName)
+{
+    string tablePrefix = GetTablePrefix(sourceTable);
+    if(!string.IsNullOrEmpty(tablePrefix))
+    {
+        if (moudlesConfigMap.ContainsKey(tablePrefix))
+    	{
+            return string.Format(@"{0}\{1}\{2}\", defaultForlderName, FirstLetterToPascal(sourceTable.Database.Name), moudlesConfigMap[tablePrefix]);
+    	}
+    }
+    return defaultForlderName;
+}
+
+public string GetDbName(DatabaseSchema db)
+{
+    return FirstLetterToPascal(db.Name);
+}
+
+public string GetColumnDefault(ColumnSchema column)
+{
+    switch (column.DataType)
+	{
+        case DbType.AnsiString: return "\"\"";
+        case DbType.AnsiStringFixedLength: return "\"\"";
+        case DbType.String: return "\"\"";
+        case DbType.StringFixedLength: return "\"\"";
+            
+        case DbType.Boolean: return "false";
+        case DbType.Byte: return "false";
+        case DbType.SByte: return "false";
+            
+        case DbType.Currency: return "0";        
+        case DbType.Decimal: return "0";
+        case DbType.Double: return "0";        
+        case DbType.Int16: return "0";
+        case DbType.Int32: return "0";
+        case DbType.Int64: return "0";
+        case DbType.Single: return "0";        
+        case DbType.UInt16: return "0";
+        case DbType.UInt32: return "0";
+        case DbType.UInt64: return "0";
+        case DbType.VarNumeric: return "0";
+            
+        case DbType.Date: return "DateTime.Now";
+        case DbType.DateTime: return "DateTime.Now";
+        case DbType.Time: return "DateTime.Now";
+            
+        case DbType.Guid: return "Guid.NewGuid()";
+       
+        default:
+        {
+            return "__UNKNOWN__" + column.NativeType;
+        }
+	}
+}
+
+public TableSchema GetForigenKeyTableSchema(ColumnSchema column)
+{
+    if (IsForeignKey(column))
+	{
+		string tableName = column.Name.Replace("Id", "");
+        foreach (var entry in moudlesConfigMap)
+    	{
+    		string fullTableName = string.Format("{0}_{1}", entry.Key, tableName);
+            if (column.Database.Tables.Contains(fullTableName))
+        	{
+                return column.Database.Tables[fullTableName];
+        	}
+    	}
+	}
+    return null;
+}
+
+public string GetSearchInputCssName(ColumnSchema column)
+{
+    string csharpType = GetCSharpVariableType(column);
+    if (csharpType == "DateTime" )
+	{
+		 return " my-input-searchcondition my-input-datepicker";
+	}
+    if (csharpType == "int" || csharpType == "decimal" || csharpType == "double" || csharpType == "long" || csharpType == "short")
+	{
+		 return " my-input-searchcondition";
+	}
+    return "";
+}
+
+public string GetEditInputCssName(ColumnSchema column)
+{
+    string csharpType = GetCSharpVariableType(column);
+    if (csharpType == "DateTime" )
+	{
+		 return " my-input-datepicker";
+	}
+    if (csharpType == "int")
+	{
+		 return " my-input-edit";
+	}
+    return "";
+}
+
+/// <summary>
+/// 获取10个代码号（0000000000;1：可编辑；2：可查询；3：列表显示；4：富文本；5：外键；其他待定）
+/// </summary>
+/// <param name="column"></param>
+/// <returns></returns>
+public static string GetTargetNumber(ColumnSchema column)
+{
+    string description = column.Description;
+    Match match = Regex.Match(description, @"\d{10}");
+    string numbers = match.Groups[0].Value;
+    if(!string.IsNullOrWhiteSpace(numbers))
+    {
+        return numbers;
+    }
+    return "1111111111";
+}
+
+/// <summary>
+/// 获取说明
+/// </summary>
+/// <param name="column"></param>
+/// <returns></returns>
+public static string GetDescription(ColumnSchema column)
+{
+    string description = column.Description;
+    description = Regex.Replace(description, @"\d{10}", "");
+    return string.IsNullOrWhiteSpace(description) ? column.Description : description;
+}
+
+/// <summary>
+/// 
+/// </summary>
+/// <param name="s"></param>
+/// <returns></returns>
+public string FirstLetterToPascal(string s)
+{
+    string str = s.Substring(0, 1).ToUpper() + s.Substring(1);
+    return KeyWordsReplace(str);
+}
+
+/// <summary>
+/// 
+/// </summary>
+/// <param name="s"></param>
+/// <returns></returns>
+public string FirstLetterToCamel(string s)
+{
+    return s.Substring(0, 1).ToLower() + s.Substring(1);
+}
+
+public string KeyWordsReplace(string s)
+{
+    string str = s;
+    foreach(var entry in keywordsReplaceConfigMap)
+	{
+        if (str.Contains(entry.Key))
+    	{
+    		 str = str.Replace(entry.Key, entry.Value);
+    	}		
+	}
+    return str;
+}
+
+public bool CanGenerated(TableSchema sourceTable, string requestTablePrefix, string specifyTableName) 
+{
+    if (!string.IsNullOrWhiteSpace(specifyTableName))
+	{
+	    return string.Equals(sourceTable.Name, specifyTableName, StringComparison.OrdinalIgnoreCase);
+	}
+    
+    if (!string.IsNullOrWhiteSpace(requestTablePrefix))
+	{
+        string tablePrefix = GetTablePrefix(sourceTable);
+        return string.Equals(tablePrefix, requestTablePrefix, StringComparison.OrdinalIgnoreCase);
+	}
+    return true;    
+}
+
+/// <summary>
+/// 是否外键
+/// </summary>
+/// <param name="column"></param>
+/// <returns></returns>
+public bool IsForeignKey(ColumnSchema column) 
+{
+    string columnName = column.Name;
+    if (!columnName.Contains("Id"))
+	{
+		 return false;
+	}
+    string tableName = columnName.Replace("Id", "");
+    if (!column.Database.Tables.Contains(tableName))
+	{
+		 return false;
+	}
+    return true;
+}
+
+/// <summary>
+/// 是否可查询
+/// </summary>
+/// <param name="column"></param>
+/// <returns></returns>
+public static bool IsQuery(ColumnSchema column)
+{
+    string number = GetTargetNumber(column);
+    if (number[1] == '1')
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+/// <summary>
+/// 是否可编辑
+/// </summary>
+/// <param name="column"></param>
+/// <returns></returns>
+public static bool IsEdit(ColumnSchema column)
+{
+    string number = GetTargetNumber(column);
+    if (number[0] == '1')
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+/// <summary>
+/// 是否在列表显示里出现（Repeater）
+/// </summary>
+/// <param name="column"></param>
+/// <returns></returns>
+public static bool IsShowList(ColumnSchema column)
+{
+    string number = GetTargetNumber(column);
+    if (number[2] == '1')
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+/// <summary>
+/// 是否富文本形式出现
+/// </summary>
+/// <param name="column"></param>
+/// <returns></returns>
+public static bool IsFCKeditor(ColumnSchema column)
+{
+    string number = GetTargetNumber(column);
+    if (number[3] == '1')
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+</script>
