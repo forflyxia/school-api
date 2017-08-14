@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class ProductCategoryPo {
+public class ProductCategoryPo
+{
 	private Integer id;
 	private String name;
 	private Integer parentcategoryid;
@@ -21,7 +23,7 @@ public class ProductCategoryPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -34,7 +36,7 @@ public class ProductCategoryPo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -47,7 +49,7 @@ public class ProductCategoryPo {
     /**
      *   getter
      */
-	public Integer getParentcategoryId() {
+	public Integer GetParentcategoryId() {
         return parentcategoryid;
     }
     
@@ -60,7 +62,7 @@ public class ProductCategoryPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -73,7 +75,7 @@ public class ProductCategoryPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -86,7 +88,7 @@ public class ProductCategoryPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

@@ -5,13 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class CityPo {
-    
+public class CityPo
+{
 	private Integer id;
 	private String name;
 	private String ename;
@@ -26,7 +27,7 @@ public class CityPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -39,7 +40,7 @@ public class CityPo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -52,7 +53,7 @@ public class CityPo {
     /**
      *   getter
      */
-	public String getEname() {
+	public String GetEname() {
         return ename;
     }
     
@@ -65,7 +66,7 @@ public class CityPo {
     /**
      *   getter
      */
-	public String getCitycode() {
+	public String GetCitycode() {
         return citycode;
     }
     
@@ -78,7 +79,7 @@ public class CityPo {
     /**
      *   getter
      */
-	public String getZipcode() {
+	public String GetZipcode() {
         return zipcode;
     }
     
@@ -91,7 +92,7 @@ public class CityPo {
     /**
      *   getter
      */
-	public Integer getProvinceId() {
+	public Integer GetProvinceId() {
         return provinceid;
     }
     
@@ -104,7 +105,7 @@ public class CityPo {
     /**
      *   getter
      */
-	public Integer getCountryId() {
+	public Integer GetCountryId() {
         return countryid;
     }
     
@@ -117,7 +118,7 @@ public class CityPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -130,7 +131,7 @@ public class CityPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -143,7 +144,7 @@ public class CityPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class OrderDetailPo {
+public class OrderDetailPo
+{
 	private Integer id;
 	private Integer orderid;
 	private Integer productid;
@@ -24,7 +26,7 @@ public class OrderDetailPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -37,7 +39,7 @@ public class OrderDetailPo {
     /**
      *   getter
      */
-	public Integer getOrderId() {
+	public Integer GetOrderId() {
         return orderid;
     }
     
@@ -50,7 +52,7 @@ public class OrderDetailPo {
     /**
      *   getter
      */
-	public Integer getProductId() {
+	public Integer GetProductId() {
         return productid;
     }
     
@@ -63,7 +65,7 @@ public class OrderDetailPo {
     /**
      *   getter
      */
-	public Integer getProductsizeId() {
+	public Integer GetProductsizeId() {
         return productsizeid;
     }
     
@@ -76,7 +78,7 @@ public class OrderDetailPo {
     /**
      *   getter
      */
-	public Double getUnitprice() {
+	public Double GetUnitprice() {
         return unitprice;
     }
     
@@ -89,7 +91,7 @@ public class OrderDetailPo {
     /**
      *   getter
      */
-	public Integer getQuantity() {
+	public Integer GetQuantity() {
         return quantity;
     }
     
@@ -102,7 +104,7 @@ public class OrderDetailPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -115,7 +117,7 @@ public class OrderDetailPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -128,7 +130,7 @@ public class OrderDetailPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

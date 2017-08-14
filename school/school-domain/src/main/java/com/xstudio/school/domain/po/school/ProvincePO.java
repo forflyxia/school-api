@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class ProvincePo {
+public class ProvincePo
+{
 	private Integer id;
 	private String name;
 	private String ename;
@@ -22,7 +24,7 @@ public class ProvincePo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -35,7 +37,7 @@ public class ProvincePo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -48,7 +50,7 @@ public class ProvincePo {
     /**
      *   getter
      */
-	public String getEname() {
+	public String GetEname() {
         return ename;
     }
     
@@ -61,7 +63,7 @@ public class ProvincePo {
     /**
      *   getter
      */
-	public Integer getCountryId() {
+	public Integer GetCountryId() {
         return countryid;
     }
     
@@ -74,7 +76,7 @@ public class ProvincePo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -87,7 +89,7 @@ public class ProvincePo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -100,7 +102,7 @@ public class ProvincePo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class ProductImagePo {
+public class ProductImagePo
+{
 	private Integer id;
 	private String productid;
 	private String imageid;
@@ -21,7 +23,7 @@ public class ProductImagePo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -34,7 +36,7 @@ public class ProductImagePo {
     /**
      *   getter
      */
-	public String getProductId() {
+	public String GetProductId() {
         return productid;
     }
     
@@ -47,7 +49,7 @@ public class ProductImagePo {
     /**
      *   getter
      */
-	public String getImageId() {
+	public String GetImageId() {
         return imageid;
     }
     
@@ -60,7 +62,7 @@ public class ProductImagePo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -73,7 +75,7 @@ public class ProductImagePo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -86,7 +88,7 @@ public class ProductImagePo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class ImagePo {
+public class ImagePo
+{
 	private Integer id;
 	private String name;
 	private String url;
@@ -24,7 +26,7 @@ public class ImagePo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -37,7 +39,7 @@ public class ImagePo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -50,7 +52,7 @@ public class ImagePo {
     /**
      *   getter
      */
-	public String getUrl() {
+	public String GetUrl() {
         return url;
     }
     
@@ -63,7 +65,7 @@ public class ImagePo {
     /**
      *   getter
      */
-	public String getIntroduction() {
+	public String GetIntroduction() {
         return introduction;
     }
     
@@ -76,7 +78,7 @@ public class ImagePo {
     /**
      *   getter
      */
-	public Integer getMerchantId() {
+	public Integer GetMerchantId() {
         return merchantid;
     }
     
@@ -89,7 +91,7 @@ public class ImagePo {
     /**
      *   getter
      */
-	public Integer getSchoolId() {
+	public Integer GetSchoolId() {
         return schoolid;
     }
     
@@ -102,7 +104,7 @@ public class ImagePo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -115,7 +117,7 @@ public class ImagePo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -128,7 +130,7 @@ public class ImagePo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

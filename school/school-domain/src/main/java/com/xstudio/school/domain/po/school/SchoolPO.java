@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class SchoolPo {
+public class SchoolPo
+{
 	private Integer id;
 	private String name;
 	private String shortname;
@@ -28,7 +30,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -41,7 +43,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -54,7 +56,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public String getShortname() {
+	public String GetShortname() {
         return shortname;
     }
     
@@ -67,7 +69,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public String getBranchname() {
+	public String GetBranchname() {
         return branchname;
     }
     
@@ -80,7 +82,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public String getLogo() {
+	public String GetLogo() {
         return logo;
     }
     
@@ -93,7 +95,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public String getIntroduction() {
+	public String GetIntroduction() {
         return introduction;
     }
     
@@ -106,7 +108,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public Integer getDistrictId() {
+	public Integer GetDistrictId() {
         return districtid;
     }
     
@@ -119,7 +121,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public String getAddress() {
+	public String GetAddress() {
         return address;
     }
     
@@ -132,7 +134,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public Double getLongitude() {
+	public Double GetLongitude() {
         return longitude;
     }
     
@@ -145,7 +147,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public Double getLatitude() {
+	public Double GetLatitude() {
         return latitude;
     }
     
@@ -158,7 +160,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -171,7 +173,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -184,7 +186,7 @@ public class SchoolPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

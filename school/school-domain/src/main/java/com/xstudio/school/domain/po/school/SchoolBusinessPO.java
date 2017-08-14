@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class SchoolBusinessPo {
+public class SchoolBusinessPo
+{
 	private Integer id;
 	private String schoolid;
 	private String name;
@@ -21,7 +23,7 @@ public class SchoolBusinessPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -34,7 +36,7 @@ public class SchoolBusinessPo {
     /**
      *   getter
      */
-	public String getSchoolId() {
+	public String GetSchoolId() {
         return schoolid;
     }
     
@@ -47,7 +49,7 @@ public class SchoolBusinessPo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -60,7 +62,7 @@ public class SchoolBusinessPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -73,7 +75,7 @@ public class SchoolBusinessPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -86,7 +88,7 @@ public class SchoolBusinessPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

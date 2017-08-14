@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class UserTaskPo {
+public class UserTaskPo
+{
 	private Integer id;
 	private Integer userid;
 	private Integer orderid;
@@ -21,7 +23,7 @@ public class UserTaskPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -34,7 +36,7 @@ public class UserTaskPo {
     /**
      *   getter
      */
-	public Integer getUserId() {
+	public Integer GetUserId() {
         return userid;
     }
     
@@ -47,7 +49,7 @@ public class UserTaskPo {
     /**
      *   getter
      */
-	public Integer getOrderId() {
+	public Integer GetOrderId() {
         return orderid;
     }
     
@@ -60,7 +62,7 @@ public class UserTaskPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -73,7 +75,7 @@ public class UserTaskPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -86,7 +88,7 @@ public class UserTaskPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

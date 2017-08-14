@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class OrderPo {
+public class OrderPo
+{
 	private Integer id;
 	private Integer userid;
 	private String contact;
@@ -31,7 +33,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -44,7 +46,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public Integer getUserId() {
+	public Integer GetUserId() {
         return userid;
     }
     
@@ -57,7 +59,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public String getContact() {
+	public String GetContact() {
         return contact;
     }
     
@@ -70,7 +72,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public String getTelphone() {
+	public String GetTelphone() {
         return telphone;
     }
     
@@ -83,7 +85,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public String getMobliephone() {
+	public String GetMobliephone() {
         return mobliephone;
     }
     
@@ -96,7 +98,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public Double getTotalamount() {
+	public Double GetTotalamount() {
         return totalamount;
     }
     
@@ -109,7 +111,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public Double getReduction() {
+	public Double GetReduction() {
         return reduction;
     }
     
@@ -122,7 +124,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public Double getAmountpaId() {
+	public Double GetAmountpaId() {
         return amountpaid;
     }
     
@@ -135,7 +137,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public String getPromotionId() {
+	public String GetPromotionId() {
         return promotionid;
     }
     
@@ -148,7 +150,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public String getPromotionladderId() {
+	public String GetPromotionladderId() {
         return promotionladderid;
     }
     
@@ -161,7 +163,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public Integer getSchoolId() {
+	public Integer GetSchoolId() {
         return schoolid;
     }
     
@@ -174,7 +176,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public String getDeliveryaddress() {
+	public String GetDeliveryaddress() {
         return deliveryaddress;
     }
     
@@ -187,7 +189,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public String getRemark() {
+	public String GetRemark() {
         return remark;
     }
     
@@ -200,7 +202,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -213,7 +215,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -226,7 +228,7 @@ public class OrderPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

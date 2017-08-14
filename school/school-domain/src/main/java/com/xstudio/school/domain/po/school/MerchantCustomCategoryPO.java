@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class MerchantCustomCategoryPo {
+public class MerchantCustomCategoryPo
+{
 	private Integer id;
 	private Integer merchatid;
 	private String categoryname;
@@ -21,7 +23,7 @@ public class MerchantCustomCategoryPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -34,7 +36,7 @@ public class MerchantCustomCategoryPo {
     /**
      *   getter
      */
-	public Integer getMerchatId() {
+	public Integer GetMerchatId() {
         return merchatid;
     }
     
@@ -47,7 +49,7 @@ public class MerchantCustomCategoryPo {
     /**
      *   getter
      */
-	public String getCategoryname() {
+	public String GetCategoryname() {
         return categoryname;
     }
     
@@ -60,7 +62,7 @@ public class MerchantCustomCategoryPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -73,7 +75,7 @@ public class MerchantCustomCategoryPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -86,7 +88,7 @@ public class MerchantCustomCategoryPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

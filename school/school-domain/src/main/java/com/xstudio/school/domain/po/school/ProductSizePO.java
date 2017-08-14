@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class ProductSizePo {
+public class ProductSizePo
+{
 	private Integer id;
 	private Integer productid;
 	private String size;
@@ -22,7 +24,7 @@ public class ProductSizePo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -35,7 +37,7 @@ public class ProductSizePo {
     /**
      *   getter
      */
-	public Integer getProductId() {
+	public Integer GetProductId() {
         return productid;
     }
     
@@ -48,7 +50,7 @@ public class ProductSizePo {
     /**
      *   getter
      */
-	public String getSize() {
+	public String GetSize() {
         return size;
     }
     
@@ -61,7 +63,7 @@ public class ProductSizePo {
     /**
      *   getter
      */
-	public Double getUnitprice() {
+	public Double GetUnitprice() {
         return unitprice;
     }
     
@@ -74,7 +76,7 @@ public class ProductSizePo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -87,7 +89,7 @@ public class ProductSizePo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -100,7 +102,7 @@ public class ProductSizePo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

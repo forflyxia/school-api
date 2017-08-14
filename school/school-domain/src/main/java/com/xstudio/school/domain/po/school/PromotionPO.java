@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class PromotionPo {
+public class PromotionPo
+{
 	private Integer id;
 	private String name;
 	private String shortname;
@@ -28,7 +30,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -41,7 +43,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -54,7 +56,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public String getShortname() {
+	public String GetShortname() {
         return shortname;
     }
     
@@ -67,7 +69,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public String getDescription() {
+	public String GetDescription() {
         return description;
     }
     
@@ -80,7 +82,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public String getProductcategoryId() {
+	public String GetProductcategoryId() {
         return productcategoryid;
     }
     
@@ -93,7 +95,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public Date getEffectdate() {
+	public Date GetEffectdate() {
         return effectdate;
     }
     
@@ -106,7 +108,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public Date getExpiredate() {
+	public Date GetExpiredate() {
         return expiredate;
     }
     
@@ -119,7 +121,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public Integer getMerchantId() {
+	public Integer GetMerchantId() {
         return merchantid;
     }
     
@@ -132,7 +134,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public Integer getMerchantundertake() {
+	public Integer GetMerchantundertake() {
         return merchantundertake;
     }
     
@@ -145,7 +147,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public Integer getPlatundertake() {
+	public Integer GetPlatundertake() {
         return platundertake;
     }
     
@@ -158,7 +160,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -171,7 +173,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -184,7 +186,7 @@ public class PromotionPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

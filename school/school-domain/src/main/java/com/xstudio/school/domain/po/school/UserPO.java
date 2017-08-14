@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class UserPo {
+public class UserPo
+{
 	private Integer id;
 	private String username;
 	private String password;
@@ -29,7 +31,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -42,7 +44,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public String getUsername() {
+	public String GetUsername() {
         return username;
     }
     
@@ -55,7 +57,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public String getPassword() {
+	public String GetPassword() {
         return password;
     }
     
@@ -68,7 +70,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public String getNickname() {
+	public String GetNickname() {
         return nickname;
     }
     
@@ -81,7 +83,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public String getEmail() {
+	public String GetEmail() {
         return email;
     }
     
@@ -94,7 +96,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public String getUsertype() {
+	public String GetUsertype() {
         return usertype;
     }
     
@@ -107,7 +109,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public String getMoblie() {
+	public String GetMoblie() {
         return moblie;
     }
     
@@ -120,7 +122,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public Integer getSex() {
+	public Integer GetSex() {
         return sex;
     }
     
@@ -133,7 +135,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public Integer getSchoolId() {
+	public Integer GetSchoolId() {
         return schoolid;
     }
     
@@ -146,7 +148,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public Double getCash() {
+	public Double GetCash() {
         return cash;
     }
     
@@ -159,7 +161,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public Double getPoint() {
+	public Double GetPoint() {
         return point;
     }
     
@@ -172,7 +174,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -185,7 +187,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -198,7 +200,7 @@ public class UserPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

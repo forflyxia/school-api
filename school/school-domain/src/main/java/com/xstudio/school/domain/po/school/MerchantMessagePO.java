@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class MerchantMessagePo {
+public class MerchantMessagePo
+{
 	private Integer id;
 	private Integer merchantid;
 	private String message;
@@ -21,7 +23,7 @@ public class MerchantMessagePo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -34,7 +36,7 @@ public class MerchantMessagePo {
     /**
      *   getter
      */
-	public Integer getMerchantId() {
+	public Integer GetMerchantId() {
         return merchantid;
     }
     
@@ -47,7 +49,7 @@ public class MerchantMessagePo {
     /**
      *   getter
      */
-	public String getMessage() {
+	public String GetMessage() {
         return message;
     }
     
@@ -60,7 +62,7 @@ public class MerchantMessagePo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -73,7 +75,7 @@ public class MerchantMessagePo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -86,7 +88,7 @@ public class MerchantMessagePo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

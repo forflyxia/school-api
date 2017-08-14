@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class MerchantPo {
+public class MerchantPo
+{
 	private Integer id;
 	private String name;
 	private String shortname;
@@ -35,7 +37,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -48,7 +50,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -61,7 +63,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getShortname() {
+	public String GetShortname() {
         return shortname;
     }
     
@@ -74,7 +76,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getBranch() {
+	public String GetBranch() {
         return branch;
     }
     
@@ -87,7 +89,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getLogo() {
+	public String GetLogo() {
         return logo;
     }
     
@@ -100,7 +102,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getIntroduction() {
+	public String GetIntroduction() {
         return introduction;
     }
     
@@ -113,7 +115,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getContact() {
+	public String GetContact() {
         return contact;
     }
     
@@ -126,7 +128,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getTelphone() {
+	public String GetTelphone() {
         return telphone;
     }
     
@@ -139,7 +141,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getMobliephone() {
+	public String GetMobliephone() {
         return mobliephone;
     }
     
@@ -152,7 +154,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getBusinesslicence() {
+	public String GetBusinesslicence() {
         return businesslicence;
     }
     
@@ -165,7 +167,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getLegalperson() {
+	public String GetLegalperson() {
         return legalperson;
     }
     
@@ -178,7 +180,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public Integer getDistrictId() {
+	public Integer GetDistrictId() {
         return districtid;
     }
     
@@ -191,7 +193,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public String getAddress() {
+	public String GetAddress() {
         return address;
     }
     
@@ -204,7 +206,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public Double getLongitude() {
+	public Double GetLongitude() {
         return longitude;
     }
     
@@ -217,7 +219,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public Double getLatitude() {
+	public Double GetLatitude() {
         return latitude;
     }
     
@@ -230,7 +232,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public Double getCash() {
+	public Double GetCash() {
         return cash;
     }
     
@@ -243,7 +245,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public Double getPoint() {
+	public Double GetPoint() {
         return point;
     }
     
@@ -256,7 +258,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -269,7 +271,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -282,7 +284,7 @@ public class MerchantPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

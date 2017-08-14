@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class DistrictPo {
+public class DistrictPo
+{
 	private Integer id;
 	private String name;
 	private String ename;
@@ -23,7 +25,7 @@ public class DistrictPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -36,7 +38,7 @@ public class DistrictPo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -49,7 +51,7 @@ public class DistrictPo {
     /**
      *   getter
      */
-	public String getEname() {
+	public String GetEname() {
         return ename;
     }
     
@@ -62,7 +64,7 @@ public class DistrictPo {
     /**
      *   getter
      */
-	public String getZipcode() {
+	public String GetZipcode() {
         return zipcode;
     }
     
@@ -75,7 +77,7 @@ public class DistrictPo {
     /**
      *   getter
      */
-	public Integer getCityId() {
+	public Integer GetCityId() {
         return cityid;
     }
     
@@ -88,7 +90,7 @@ public class DistrictPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -101,7 +103,7 @@ public class DistrictPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -114,7 +116,7 @@ public class DistrictPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

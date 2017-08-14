@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class ProductPo {
+public class ProductPo
+{
 	private Integer id;
 	private String name;
 	private String logo;
@@ -26,7 +28,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -39,7 +41,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -52,7 +54,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public String getLogo() {
+	public String GetLogo() {
         return logo;
     }
     
@@ -65,7 +67,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public Integer getProductcategoryId() {
+	public Integer GetProductcategoryId() {
         return productcategoryid;
     }
     
@@ -78,7 +80,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public String getIntroduction() {
+	public String GetIntroduction() {
         return introduction;
     }
     
@@ -91,7 +93,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public Integer getMerchantId() {
+	public Integer GetMerchantId() {
         return merchantid;
     }
     
@@ -104,7 +106,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public Integer getMerchantcustomcategoryId() {
+	public Integer GetMerchantcustomcategoryId() {
         return merchantcustomcategoryid;
     }
     
@@ -117,7 +119,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public Integer getSchoolId() {
+	public Integer GetSchoolId() {
         return schoolid;
     }
     
@@ -130,7 +132,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -143,7 +145,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -156,7 +158,7 @@ public class ProductPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

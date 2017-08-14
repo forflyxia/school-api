@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class MerchantImagePo {
+public class MerchantImagePo
+{
 	private Integer id;
 	private Integer merchantid;
 	private Integer imageid;
@@ -22,7 +24,7 @@ public class MerchantImagePo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -35,7 +37,7 @@ public class MerchantImagePo {
     /**
      *   getter
      */
-	public Integer getMerchantId() {
+	public Integer GetMerchantId() {
         return merchantid;
     }
     
@@ -48,7 +50,7 @@ public class MerchantImagePo {
     /**
      *   getter
      */
-	public Integer getImageId() {
+	public Integer GetImageId() {
         return imageid;
     }
     
@@ -61,7 +63,7 @@ public class MerchantImagePo {
     /**
      *   getter
      */
-	public Integer getSequence() {
+	public Integer GetSequence() {
         return sequence;
     }
     
@@ -74,7 +76,7 @@ public class MerchantImagePo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -87,7 +89,7 @@ public class MerchantImagePo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -100,7 +102,7 @@ public class MerchantImagePo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

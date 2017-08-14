@@ -4,7 +4,7 @@ Author:         hbxia
 Description:    
 --%>
 
-<%@ Template Language="C#" TargetLanguage="Java" ResponseEncoding="utf-8" Encoding="utf-8" %>
+<%@ Template Language="C#" TargetLanguage="Java" ResponseEncoding="UTF-8" %>
 
 <%@ Assembly Name="SchemaExplorer" %>
 <%@ Assembly Name="CodeSmith.BaseTemplates" %>
@@ -22,12 +22,14 @@ Description:
 *************************************************************************************************************************************************/
 package <%=Namespace%>.domain.po.<%=SourceTable.Database.Name.ToLower()%>;
 
+
 import java.util.Date;
 
 /**
  *  <%=SourceTable.Description %>
  */
-public class <%=GetClassName(SourceTable) %>Po {
+public class <%=GetClassName(SourceTable) %>Po
+{
     <%foreach(ColumnSchema column in SourceTable.Columns) { %>      
 	private <%=GetCSharpVariableType(column) %> <%=FirstLetterToCamel(column.Name) %>;
     <%} %>
@@ -36,7 +38,7 @@ public class <%=GetClassName(SourceTable) %>Po {
     /**
      *  <%=column.Description %> getter
      */
-	public <%=GetCSharpVariableType(column) %> get<%=FirstLetterToPascal(column.Name) %>() {
+	public <%=GetCSharpVariableType(column) %> Get<%=FirstLetterToPascal(column.Name) %>() {
         return <%=FirstLetterToCamel(column.Name) %>;
     }
     

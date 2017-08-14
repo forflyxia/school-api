@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class PromotionLadderPo {
+public class PromotionLadderPo
+{
 	private Integer id;
 	private String name;
 	private Integer promotionid;
@@ -23,7 +25,7 @@ public class PromotionLadderPo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -36,7 +38,7 @@ public class PromotionLadderPo {
     /**
      *   getter
      */
-	public String getName() {
+	public String GetName() {
         return name;
     }
     
@@ -49,7 +51,7 @@ public class PromotionLadderPo {
     /**
      *   getter
      */
-	public Integer getPromotionId() {
+	public Integer GetPromotionId() {
         return promotionid;
     }
     
@@ -62,7 +64,7 @@ public class PromotionLadderPo {
     /**
      *   getter
      */
-	public Double getTotalamount() {
+	public Double GetTotalamount() {
         return totalamount;
     }
     
@@ -75,7 +77,7 @@ public class PromotionLadderPo {
     /**
      *   getter
      */
-	public Double getReduction() {
+	public Double GetReduction() {
         return reduction;
     }
     
@@ -88,7 +90,7 @@ public class PromotionLadderPo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -101,7 +103,7 @@ public class PromotionLadderPo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -114,7 +116,7 @@ public class PromotionLadderPo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     

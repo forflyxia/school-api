@@ -5,12 +5,14 @@
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
 
+
 import java.util.Date;
 
 /**
  *  
  */
-public class UserMessagePo {
+public class UserMessagePo
+{
 	private Integer id;
 	private Integer userid;
 	private String message;
@@ -21,7 +23,7 @@ public class UserMessagePo {
     /**
      *   getter
      */
-	public Integer getId() {
+	public Integer GetId() {
         return id;
     }
     
@@ -34,7 +36,7 @@ public class UserMessagePo {
     /**
      *   getter
      */
-	public Integer getUserId() {
+	public Integer GetUserId() {
         return userid;
     }
     
@@ -47,7 +49,7 @@ public class UserMessagePo {
     /**
      *   getter
      */
-	public String getMessage() {
+	public String GetMessage() {
         return message;
     }
     
@@ -60,7 +62,7 @@ public class UserMessagePo {
     /**
      *   getter
      */
-	public Integer getStatus() {
+	public Integer GetStatus() {
         return status;
     }
     
@@ -73,7 +75,7 @@ public class UserMessagePo {
     /**
      *   getter
      */
-	public Date getCreatetime() {
+	public Date GetCreatetime() {
         return createtime;
     }
     
@@ -86,7 +88,7 @@ public class UserMessagePo {
     /**
      *   getter
      */
-	public Date getUpdatetime() {
+	public Date GetUpdatetime() {
         return updatetime;
     }
     
