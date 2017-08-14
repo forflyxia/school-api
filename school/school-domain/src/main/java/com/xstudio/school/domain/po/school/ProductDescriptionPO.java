@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       ProductDescriptionPO.java
+/************************************************************************************************************************************************
+ * FileName:       ProductDescriptionPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class ProductDescriptionPO
-{
+public class ProductDescriptionPo {
 	private Integer id;
 	private Integer productid;
 	private String description;
@@ -23,7 +21,7 @@ public class ProductDescriptionPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -36,7 +34,7 @@ public class ProductDescriptionPO
     /**
      *   getter
      */
-	public Integer GetProductId() {
+	public Integer getProductId() {
         return productid;
     }
     
@@ -49,7 +47,7 @@ public class ProductDescriptionPO
     /**
      *   getter
      */
-	public String GetDescription() {
+	public String getDescription() {
         return description;
     }
     
@@ -62,7 +60,7 @@ public class ProductDescriptionPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -75,7 +73,7 @@ public class ProductDescriptionPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -88,7 +86,7 @@ public class ProductDescriptionPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

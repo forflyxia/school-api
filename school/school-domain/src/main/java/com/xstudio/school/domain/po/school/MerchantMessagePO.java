@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       MerchantMessagePO.java
+/************************************************************************************************************************************************
+ * FileName:       MerchantMessagePo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class MerchantMessagePO
-{
+public class MerchantMessagePo {
 	private Integer id;
 	private Integer merchantid;
 	private String message;
@@ -23,7 +21,7 @@ public class MerchantMessagePO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -36,7 +34,7 @@ public class MerchantMessagePO
     /**
      *   getter
      */
-	public Integer GetMerchantId() {
+	public Integer getMerchantId() {
         return merchantid;
     }
     
@@ -49,7 +47,7 @@ public class MerchantMessagePO
     /**
      *   getter
      */
-	public String GetMessage() {
+	public String getMessage() {
         return message;
     }
     
@@ -62,7 +60,7 @@ public class MerchantMessagePO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -75,7 +73,7 @@ public class MerchantMessagePO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -88,7 +86,7 @@ public class MerchantMessagePO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

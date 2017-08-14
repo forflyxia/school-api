@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       PromotionPO.java
+/************************************************************************************************************************************************
+ * FileName:       PromotionPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class PromotionPO
-{
+public class PromotionPo {
 	private Integer id;
 	private String name;
 	private String shortname;
@@ -30,7 +28,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -43,7 +41,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
@@ -56,7 +54,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public String GetShortname() {
+	public String getShortname() {
         return shortname;
     }
     
@@ -69,7 +67,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public String GetDescription() {
+	public String getDescription() {
         return description;
     }
     
@@ -82,7 +80,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public String GetProductcategoryId() {
+	public String getProductcategoryId() {
         return productcategoryid;
     }
     
@@ -95,7 +93,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public Date GetEffectdate() {
+	public Date getEffectdate() {
         return effectdate;
     }
     
@@ -108,7 +106,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public Date GetExpiredate() {
+	public Date getExpiredate() {
         return expiredate;
     }
     
@@ -121,7 +119,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public Integer GetMerchantId() {
+	public Integer getMerchantId() {
         return merchantid;
     }
     
@@ -134,7 +132,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public Integer GetMerchantundertake() {
+	public Integer getMerchantundertake() {
         return merchantundertake;
     }
     
@@ -147,7 +145,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public Integer GetPlatundertake() {
+	public Integer getPlatundertake() {
         return platundertake;
     }
     
@@ -160,7 +158,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -173,7 +171,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -186,7 +184,7 @@ public class PromotionPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

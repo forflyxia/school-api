@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       OrderDetailPO.java
+/************************************************************************************************************************************************
+ * FileName:       OrderDetailPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class OrderDetailPO
-{
+public class OrderDetailPo {
 	private Integer id;
 	private Integer orderid;
 	private Integer productid;
@@ -26,7 +24,7 @@ public class OrderDetailPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -39,7 +37,7 @@ public class OrderDetailPO
     /**
      *   getter
      */
-	public Integer GetOrderId() {
+	public Integer getOrderId() {
         return orderid;
     }
     
@@ -52,7 +50,7 @@ public class OrderDetailPO
     /**
      *   getter
      */
-	public Integer GetProductId() {
+	public Integer getProductId() {
         return productid;
     }
     
@@ -65,7 +63,7 @@ public class OrderDetailPO
     /**
      *   getter
      */
-	public Integer GetProductsizeId() {
+	public Integer getProductsizeId() {
         return productsizeid;
     }
     
@@ -78,7 +76,7 @@ public class OrderDetailPO
     /**
      *   getter
      */
-	public Double GetUnitprice() {
+	public Double getUnitprice() {
         return unitprice;
     }
     
@@ -91,7 +89,7 @@ public class OrderDetailPO
     /**
      *   getter
      */
-	public Integer GetQuantity() {
+	public Integer getQuantity() {
         return quantity;
     }
     
@@ -104,7 +102,7 @@ public class OrderDetailPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -117,7 +115,7 @@ public class OrderDetailPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -130,7 +128,7 @@ public class OrderDetailPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

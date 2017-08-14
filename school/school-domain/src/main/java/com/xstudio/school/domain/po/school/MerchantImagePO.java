@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       MerchantImagePO.java
+/************************************************************************************************************************************************
+ * FileName:       MerchantImagePo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class MerchantImagePO
-{
+public class MerchantImagePo {
 	private Integer id;
 	private Integer merchantid;
 	private Integer imageid;
@@ -24,7 +22,7 @@ public class MerchantImagePO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -37,7 +35,7 @@ public class MerchantImagePO
     /**
      *   getter
      */
-	public Integer GetMerchantId() {
+	public Integer getMerchantId() {
         return merchantid;
     }
     
@@ -50,7 +48,7 @@ public class MerchantImagePO
     /**
      *   getter
      */
-	public Integer GetImageId() {
+	public Integer getImageId() {
         return imageid;
     }
     
@@ -63,7 +61,7 @@ public class MerchantImagePO
     /**
      *   getter
      */
-	public Integer GetSequence() {
+	public Integer getSequence() {
         return sequence;
     }
     
@@ -76,7 +74,7 @@ public class MerchantImagePO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -89,7 +87,7 @@ public class MerchantImagePO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -102,7 +100,7 @@ public class MerchantImagePO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       UserPO.java
+/************************************************************************************************************************************************
+ * FileName:       UserPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class UserPO
-{
+public class UserPo {
 	private Integer id;
 	private String username;
 	private String password;
@@ -31,7 +29,7 @@ public class UserPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -44,7 +42,7 @@ public class UserPO
     /**
      *   getter
      */
-	public String GetUsername() {
+	public String getUsername() {
         return username;
     }
     
@@ -57,7 +55,7 @@ public class UserPO
     /**
      *   getter
      */
-	public String GetPassword() {
+	public String getPassword() {
         return password;
     }
     
@@ -70,7 +68,7 @@ public class UserPO
     /**
      *   getter
      */
-	public String GetNickname() {
+	public String getNickname() {
         return nickname;
     }
     
@@ -83,7 +81,7 @@ public class UserPO
     /**
      *   getter
      */
-	public String GetEmail() {
+	public String getEmail() {
         return email;
     }
     
@@ -96,7 +94,7 @@ public class UserPO
     /**
      *   getter
      */
-	public String GetUsertype() {
+	public String getUsertype() {
         return usertype;
     }
     
@@ -109,7 +107,7 @@ public class UserPO
     /**
      *   getter
      */
-	public String GetMoblie() {
+	public String getMoblie() {
         return moblie;
     }
     
@@ -122,7 +120,7 @@ public class UserPO
     /**
      *   getter
      */
-	public Integer GetSex() {
+	public Integer getSex() {
         return sex;
     }
     
@@ -135,7 +133,7 @@ public class UserPO
     /**
      *   getter
      */
-	public Integer GetSchoolId() {
+	public Integer getSchoolId() {
         return schoolid;
     }
     
@@ -148,7 +146,7 @@ public class UserPO
     /**
      *   getter
      */
-	public Double GetCash() {
+	public Double getCash() {
         return cash;
     }
     
@@ -161,7 +159,7 @@ public class UserPO
     /**
      *   getter
      */
-	public Double GetPoint() {
+	public Double getPoint() {
         return point;
     }
     
@@ -174,7 +172,7 @@ public class UserPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -187,7 +185,7 @@ public class UserPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -200,7 +198,7 @@ public class UserPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

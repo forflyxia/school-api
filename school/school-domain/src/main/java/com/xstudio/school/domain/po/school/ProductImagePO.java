@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       ProductImagePO.java
+/************************************************************************************************************************************************
+ * FileName:       ProductImagePo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class ProductImagePO
-{
+public class ProductImagePo {
 	private Integer id;
 	private String productid;
 	private String imageid;
@@ -23,7 +21,7 @@ public class ProductImagePO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -36,7 +34,7 @@ public class ProductImagePO
     /**
      *   getter
      */
-	public String GetProductId() {
+	public String getProductId() {
         return productid;
     }
     
@@ -49,7 +47,7 @@ public class ProductImagePO
     /**
      *   getter
      */
-	public String GetImageId() {
+	public String getImageId() {
         return imageid;
     }
     
@@ -62,7 +60,7 @@ public class ProductImagePO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -75,7 +73,7 @@ public class ProductImagePO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -88,7 +86,7 @@ public class ProductImagePO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

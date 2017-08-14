@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       MerchantCustomCategoryPO.java
+/************************************************************************************************************************************************
+ * FileName:       MerchantCustomCategoryPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class MerchantCustomCategoryPO
-{
+public class MerchantCustomCategoryPo {
 	private Integer id;
 	private Integer merchatid;
 	private String categoryname;
@@ -23,7 +21,7 @@ public class MerchantCustomCategoryPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -36,7 +34,7 @@ public class MerchantCustomCategoryPO
     /**
      *   getter
      */
-	public Integer GetMerchatId() {
+	public Integer getMerchatId() {
         return merchatid;
     }
     
@@ -49,7 +47,7 @@ public class MerchantCustomCategoryPO
     /**
      *   getter
      */
-	public String GetCategoryname() {
+	public String getCategoryname() {
         return categoryname;
     }
     
@@ -62,7 +60,7 @@ public class MerchantCustomCategoryPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -75,7 +73,7 @@ public class MerchantCustomCategoryPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -88,7 +86,7 @@ public class MerchantCustomCategoryPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

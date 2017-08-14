@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <codeSmith xmlns="http://www.codesmithtools.com/schema/csp.xsd">
     <propertySets>	
-          <propertySet name="basic_city" output="src\main\java\com\xstudio\school\domain\po\school\CityPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="basic_city" output="src\main\java\com\xstudio\school\domain\po\school\CityPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -12,7 +12,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="basic_country" output="src\main\java\com\xstudio\school\domain\po\school\CountryPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="basic_country" output="src\main\java\com\xstudio\school\domain\po\school\CountryPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -23,7 +23,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="basic_district" output="src\main\java\com\xstudio\school\domain\po\school\DistrictPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="basic_district" output="src\main\java\com\xstudio\school\domain\po\school\DistrictPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -34,7 +34,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="basic_province" output="src\main\java\com\xstudio\school\domain\po\school\ProvincePO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="basic_province" output="src\main\java\com\xstudio\school\domain\po\school\ProvincePo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -45,7 +45,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="image_image" output="src\main\java\com\xstudio\school\domain\po\school\ImagePO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="image_image" output="src\main\java\com\xstudio\school\domain\po\school\ImagePo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -56,7 +56,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="merchant_merchant" output="src\main\java\com\xstudio\school\domain\po\school\MerchantPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="merchant_merchant" output="src\main\java\com\xstudio\school\domain\po\school\MerchantPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -67,7 +67,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="merchant_merchant_custom_category" output="src\main\java\com\xstudio\school\domain\po\school\MerchantCustomCategoryPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="merchant_merchant_custom_category" output="src\main\java\com\xstudio\school\domain\po\school\MerchantCustomCategoryPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -78,7 +78,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="merchant_merchant_image" output="src\main\java\com\xstudio\school\domain\po\school\MerchantImagePO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="merchant_merchant_image" output="src\main\java\com\xstudio\school\domain\po\school\MerchantImagePo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -89,7 +89,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="merchant_merchant_message" output="src\main\java\com\xstudio\school\domain\po\school\MerchantMessagePO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="merchant_merchant_message" output="src\main\java\com\xstudio\school\domain\po\school\MerchantMessagePo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -100,7 +100,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="order_order" output="src\main\java\com\xstudio\school\domain\po\school\OrderPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="order_order" output="src\main\java\com\xstudio\school\domain\po\school\OrderPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -111,7 +111,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="order_order_detail" output="src\main\java\com\xstudio\school\domain\po\school\OrderDetailPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="order_order_detail" output="src\main\java\com\xstudio\school\domain\po\school\OrderDetailPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -122,7 +122,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="product_product" output="src\main\java\com\xstudio\school\domain\po\school\ProductPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="product_product" output="src\main\java\com\xstudio\school\domain\po\school\ProductPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -133,7 +133,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="product_product_category" output="src\main\java\com\xstudio\school\domain\po\school\ProductCategoryPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="product_product_category" output="src\main\java\com\xstudio\school\domain\po\school\ProductCategoryPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -144,7 +144,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="product_product_description" output="src\main\java\com\xstudio\school\domain\po\school\ProductDescriptionPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="product_product_description" output="src\main\java\com\xstudio\school\domain\po\school\ProductDescriptionPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -155,7 +155,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="product_product_image" output="src\main\java\com\xstudio\school\domain\po\school\ProductImagePO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="product_product_image" output="src\main\java\com\xstudio\school\domain\po\school\ProductImagePo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -166,7 +166,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="product_product_size" output="src\main\java\com\xstudio\school\domain\po\school\ProductSizePO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="product_product_size" output="src\main\java\com\xstudio\school\domain\po\school\ProductSizePo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -177,7 +177,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="promotion_promotion" output="src\main\java\com\xstudio\school\domain\po\school\PromotionPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="promotion_promotion" output="src\main\java\com\xstudio\school\domain\po\school\PromotionPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -188,7 +188,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="promotion_promotion_ladder" output="src\main\java\com\xstudio\school\domain\po\school\PromotionLadderPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="promotion_promotion_ladder" output="src\main\java\com\xstudio\school\domain\po\school\PromotionLadderPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -199,7 +199,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="school_school" output="src\main\java\com\xstudio\school\domain\po\school\SchoolPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="school_school" output="src\main\java\com\xstudio\school\domain\po\school\SchoolPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -210,7 +210,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="school_school_business" output="src\main\java\com\xstudio\school\domain\po\school\SchoolBusinessPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="school_school_business" output="src\main\java\com\xstudio\school\domain\po\school\SchoolBusinessPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -221,7 +221,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="school_school_news" output="src\main\java\com\xstudio\school\domain\po\school\SchoolNewsPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="school_school_news" output="src\main\java\com\xstudio\school\domain\po\school\SchoolNewsPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -232,7 +232,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="user_user" output="src\main\java\com\xstudio\school\domain\po\school\UserPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="user_user" output="src\main\java\com\xstudio\school\domain\po\school\UserPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -243,7 +243,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="user_user_message" output="src\main\java\com\xstudio\school\domain\po\school\UserMessagePO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="user_user_message" output="src\main\java\com\xstudio\school\domain\po\school\UserMessagePo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
@@ -254,7 +254,7 @@
                 </table>
               </property>
         </propertySet>
-          <propertySet name="user_user_task" output="src\main\java\com\xstudio\school\domain\po\school\UserTaskPO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="user_user_task" output="src\main\java\com\xstudio\school\domain\po\school\UserTaskPo.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
               <property name="Namespace">com.xstudio.school</property>
               <property name="SourceTable">
                 <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>

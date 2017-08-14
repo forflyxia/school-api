@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       SchoolBusinessPO.java
+/************************************************************************************************************************************************
+ * FileName:       SchoolBusinessPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class SchoolBusinessPO
-{
+public class SchoolBusinessPo {
 	private Integer id;
 	private String schoolid;
 	private String name;
@@ -23,7 +21,7 @@ public class SchoolBusinessPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -36,7 +34,7 @@ public class SchoolBusinessPO
     /**
      *   getter
      */
-	public String GetSchoolId() {
+	public String getSchoolId() {
         return schoolid;
     }
     
@@ -49,7 +47,7 @@ public class SchoolBusinessPO
     /**
      *   getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
@@ -62,7 +60,7 @@ public class SchoolBusinessPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -75,7 +73,7 @@ public class SchoolBusinessPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -88,7 +86,7 @@ public class SchoolBusinessPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       DistrictPO.java
+/************************************************************************************************************************************************
+ * FileName:       DistrictPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class DistrictPO
-{
+public class DistrictPo {
 	private Integer id;
 	private String name;
 	private String ename;
@@ -25,7 +23,7 @@ public class DistrictPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -38,7 +36,7 @@ public class DistrictPO
     /**
      *   getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
@@ -51,7 +49,7 @@ public class DistrictPO
     /**
      *   getter
      */
-	public String GetEname() {
+	public String getEname() {
         return ename;
     }
     
@@ -64,7 +62,7 @@ public class DistrictPO
     /**
      *   getter
      */
-	public String GetZipcode() {
+	public String getZipcode() {
         return zipcode;
     }
     
@@ -77,7 +75,7 @@ public class DistrictPO
     /**
      *   getter
      */
-	public Integer GetCityId() {
+	public Integer getCityId() {
         return cityid;
     }
     
@@ -90,7 +88,7 @@ public class DistrictPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -103,7 +101,7 @@ public class DistrictPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -116,7 +114,7 @@ public class DistrictPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

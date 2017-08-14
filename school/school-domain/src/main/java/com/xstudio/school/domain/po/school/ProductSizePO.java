@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       ProductSizePO.java
+/************************************************************************************************************************************************
+ * FileName:       ProductSizePo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class ProductSizePO
-{
+public class ProductSizePo {
 	private Integer id;
 	private Integer productid;
 	private String size;
@@ -24,7 +22,7 @@ public class ProductSizePO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -37,7 +35,7 @@ public class ProductSizePO
     /**
      *   getter
      */
-	public Integer GetProductId() {
+	public Integer getProductId() {
         return productid;
     }
     
@@ -50,7 +48,7 @@ public class ProductSizePO
     /**
      *   getter
      */
-	public String GetSize() {
+	public String getSize() {
         return size;
     }
     
@@ -63,7 +61,7 @@ public class ProductSizePO
     /**
      *   getter
      */
-	public Double GetUnitprice() {
+	public Double getUnitprice() {
         return unitprice;
     }
     
@@ -76,7 +74,7 @@ public class ProductSizePO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -89,7 +87,7 @@ public class ProductSizePO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -102,7 +100,7 @@ public class ProductSizePO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

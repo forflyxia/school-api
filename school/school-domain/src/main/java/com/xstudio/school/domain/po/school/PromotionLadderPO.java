@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       PromotionLadderPO.java
+/************************************************************************************************************************************************
+ * FileName:       PromotionLadderPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class PromotionLadderPO
-{
+public class PromotionLadderPo {
 	private Integer id;
 	private String name;
 	private Integer promotionid;
@@ -25,7 +23,7 @@ public class PromotionLadderPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -38,7 +36,7 @@ public class PromotionLadderPO
     /**
      *   getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
@@ -51,7 +49,7 @@ public class PromotionLadderPO
     /**
      *   getter
      */
-	public Integer GetPromotionId() {
+	public Integer getPromotionId() {
         return promotionid;
     }
     
@@ -64,7 +62,7 @@ public class PromotionLadderPO
     /**
      *   getter
      */
-	public Double GetTotalamount() {
+	public Double getTotalamount() {
         return totalamount;
     }
     
@@ -77,7 +75,7 @@ public class PromotionLadderPO
     /**
      *   getter
      */
-	public Double GetReduction() {
+	public Double getReduction() {
         return reduction;
     }
     
@@ -90,7 +88,7 @@ public class PromotionLadderPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -103,7 +101,7 @@ public class PromotionLadderPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -116,7 +114,7 @@ public class PromotionLadderPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

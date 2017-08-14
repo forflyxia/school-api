@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       ProvincePO.java
+/************************************************************************************************************************************************
+ * FileName:       ProvincePo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class ProvincePO
-{
+public class ProvincePo {
 	private Integer id;
 	private String name;
 	private String ename;
@@ -24,7 +22,7 @@ public class ProvincePO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -37,7 +35,7 @@ public class ProvincePO
     /**
      *   getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
@@ -50,7 +48,7 @@ public class ProvincePO
     /**
      *   getter
      */
-	public String GetEname() {
+	public String getEname() {
         return ename;
     }
     
@@ -63,7 +61,7 @@ public class ProvincePO
     /**
      *   getter
      */
-	public Integer GetCountryId() {
+	public Integer getCountryId() {
         return countryid;
     }
     
@@ -76,7 +74,7 @@ public class ProvincePO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -89,7 +87,7 @@ public class ProvincePO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -102,7 +100,7 @@ public class ProvincePO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

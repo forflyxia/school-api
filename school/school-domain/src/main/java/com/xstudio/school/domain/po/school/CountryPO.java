@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       CountryPO.java
+/************************************************************************************************************************************************
+ * FileName:       CountryPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class CountryPO
-{
+public class CountryPo {
 	private Integer id;
 	private String name;
 	private String ename;
@@ -23,7 +21,7 @@ public class CountryPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -36,7 +34,7 @@ public class CountryPO
     /**
      *   getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
@@ -49,7 +47,7 @@ public class CountryPO
     /**
      *   getter
      */
-	public String GetEname() {
+	public String getEname() {
         return ename;
     }
     
@@ -62,7 +60,7 @@ public class CountryPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -75,7 +73,7 @@ public class CountryPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -88,7 +86,7 @@ public class CountryPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

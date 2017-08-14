@@ -1,18 +1,17 @@
-﻿/************************************************************************************************************************************************
- * FileName:       CityPO.java
+/************************************************************************************************************************************************
+ * FileName:       CityPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class CityPO
-{
+public class CityPo {
+    
 	private Integer id;
 	private String name;
 	private String ename;
@@ -27,7 +26,7 @@ public class CityPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -40,7 +39,7 @@ public class CityPO
     /**
      *   getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
@@ -53,7 +52,7 @@ public class CityPO
     /**
      *   getter
      */
-	public String GetEname() {
+	public String getEname() {
         return ename;
     }
     
@@ -66,7 +65,7 @@ public class CityPO
     /**
      *   getter
      */
-	public String GetCitycode() {
+	public String getCitycode() {
         return citycode;
     }
     
@@ -79,7 +78,7 @@ public class CityPO
     /**
      *   getter
      */
-	public String GetZipcode() {
+	public String getZipcode() {
         return zipcode;
     }
     
@@ -92,7 +91,7 @@ public class CityPO
     /**
      *   getter
      */
-	public Integer GetProvinceId() {
+	public Integer getProvinceId() {
         return provinceid;
     }
     
@@ -105,7 +104,7 @@ public class CityPO
     /**
      *   getter
      */
-	public Integer GetCountryId() {
+	public Integer getCountryId() {
         return countryid;
     }
     
@@ -118,7 +117,7 @@ public class CityPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -131,7 +130,7 @@ public class CityPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -144,7 +143,7 @@ public class CityPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

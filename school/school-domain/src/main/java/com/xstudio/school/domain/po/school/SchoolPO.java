@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       SchoolPO.java
+/************************************************************************************************************************************************
+ * FileName:       SchoolPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class SchoolPO
-{
+public class SchoolPo {
 	private Integer id;
 	private String name;
 	private String shortname;
@@ -30,7 +28,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -43,7 +41,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
@@ -56,7 +54,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public String GetShortname() {
+	public String getShortname() {
         return shortname;
     }
     
@@ -69,7 +67,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public String GetBranchname() {
+	public String getBranchname() {
         return branchname;
     }
     
@@ -82,7 +80,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public String GetLogo() {
+	public String getLogo() {
         return logo;
     }
     
@@ -95,7 +93,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public String GetIntroduction() {
+	public String getIntroduction() {
         return introduction;
     }
     
@@ -108,7 +106,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public Integer GetDistrictId() {
+	public Integer getDistrictId() {
         return districtid;
     }
     
@@ -121,7 +119,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public String GetAddress() {
+	public String getAddress() {
         return address;
     }
     
@@ -134,7 +132,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public Double GetLongitude() {
+	public Double getLongitude() {
         return longitude;
     }
     
@@ -147,7 +145,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public Double GetLatitude() {
+	public Double getLatitude() {
         return latitude;
     }
     
@@ -160,7 +158,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -173,7 +171,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -186,7 +184,7 @@ public class SchoolPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

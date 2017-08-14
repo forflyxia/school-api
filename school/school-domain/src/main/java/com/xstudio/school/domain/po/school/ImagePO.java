@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       ImagePO.java
+/************************************************************************************************************************************************
+ * FileName:       ImagePo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class ImagePO
-{
+public class ImagePo {
 	private Integer id;
 	private String name;
 	private String url;
@@ -26,7 +24,7 @@ public class ImagePO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -39,7 +37,7 @@ public class ImagePO
     /**
      *   getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
@@ -52,7 +50,7 @@ public class ImagePO
     /**
      *   getter
      */
-	public String GetUrl() {
+	public String getUrl() {
         return url;
     }
     
@@ -65,7 +63,7 @@ public class ImagePO
     /**
      *   getter
      */
-	public String GetIntroduction() {
+	public String getIntroduction() {
         return introduction;
     }
     
@@ -78,7 +76,7 @@ public class ImagePO
     /**
      *   getter
      */
-	public Integer GetMerchantId() {
+	public Integer getMerchantId() {
         return merchantid;
     }
     
@@ -91,7 +89,7 @@ public class ImagePO
     /**
      *   getter
      */
-	public Integer GetSchoolId() {
+	public Integer getSchoolId() {
         return schoolid;
     }
     
@@ -104,7 +102,7 @@ public class ImagePO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -117,7 +115,7 @@ public class ImagePO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -130,7 +128,7 @@ public class ImagePO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

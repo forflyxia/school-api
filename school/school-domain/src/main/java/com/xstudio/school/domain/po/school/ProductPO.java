@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       ProductPO.java
+/************************************************************************************************************************************************
+ * FileName:       ProductPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class ProductPO
-{
+public class ProductPo {
 	private Integer id;
 	private String name;
 	private String logo;
@@ -28,7 +26,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -41,7 +39,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
@@ -54,7 +52,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public String GetLogo() {
+	public String getLogo() {
         return logo;
     }
     
@@ -67,7 +65,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public Integer GetProductcategoryId() {
+	public Integer getProductcategoryId() {
         return productcategoryid;
     }
     
@@ -80,7 +78,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public String GetIntroduction() {
+	public String getIntroduction() {
         return introduction;
     }
     
@@ -93,7 +91,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public Integer GetMerchantId() {
+	public Integer getMerchantId() {
         return merchantid;
     }
     
@@ -106,7 +104,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public Integer GetMerchantcustomcategoryId() {
+	public Integer getMerchantcustomcategoryId() {
         return merchantcustomcategoryid;
     }
     
@@ -119,7 +117,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public Integer GetSchoolId() {
+	public Integer getSchoolId() {
         return schoolid;
     }
     
@@ -132,7 +130,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -145,7 +143,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -158,7 +156,7 @@ public class ProductPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     

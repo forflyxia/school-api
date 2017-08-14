@@ -1,18 +1,16 @@
-﻿/************************************************************************************************************************************************
- * FileName:       SchoolNewsPO.java
+/************************************************************************************************************************************************
+ * FileName:       SchoolNewsPo.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 package com.xstudio.school.domain.po.school;
-
 
 import java.util.Date;
 
 /**
  *  
  */
-public class SchoolNewsPO
-{
+public class SchoolNewsPo {
 	private Integer id;
 	private String schoolid;
 	private String newstitle;
@@ -24,7 +22,7 @@ public class SchoolNewsPO
     /**
      *   getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
@@ -37,7 +35,7 @@ public class SchoolNewsPO
     /**
      *   getter
      */
-	public String GetSchoolId() {
+	public String getSchoolId() {
         return schoolid;
     }
     
@@ -50,7 +48,7 @@ public class SchoolNewsPO
     /**
      *   getter
      */
-	public String GetNewstitle() {
+	public String getNewstitle() {
         return newstitle;
     }
     
@@ -63,7 +61,7 @@ public class SchoolNewsPO
     /**
      *   getter
      */
-	public String GetNews() {
+	public String getNews() {
         return news;
     }
     
@@ -76,7 +74,7 @@ public class SchoolNewsPO
     /**
      *   getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
@@ -89,7 +87,7 @@ public class SchoolNewsPO
     /**
      *   getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
@@ -102,7 +100,7 @@ public class SchoolNewsPO
     /**
      *   getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
