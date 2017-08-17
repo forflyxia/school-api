@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  图片信息
  */
 public class ImagePo
 {
@@ -23,119 +23,128 @@ public class ImagePo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  图片ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  图片ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  名称 getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
     /**
-     *   setter
+     *  名称 setter
      */
 	public void setName(String name) {
         this.name = name;
     }
+    
     /**
-     *   getter
+     *  Url getter
      */
-	public String GetUrl() {
+	public String getUrl() {
         return url;
     }
     
     /**
-     *   setter
+     *  Url setter
      */
 	public void setUrl(String url) {
         this.url = url;
     }
+    
     /**
-     *   getter
+     *  简介 getter
      */
-	public String GetIntroduction() {
+	public String getIntroduction() {
         return introduction;
     }
     
     /**
-     *   setter
+     *  简介 setter
      */
 	public void setIntroduction(String introduction) {
         this.introduction = introduction;
     }
+    
     /**
-     *   getter
+     *  商户ID getter
      */
-	public Integer GetMerchantId() {
+	public Integer getMerchantId() {
         return merchantid;
     }
     
     /**
-     *   setter
+     *  商户ID setter
      */
 	public void setMerchantId(Integer merchantid) {
         this.merchantid = merchantid;
     }
+    
     /**
-     *   getter
+     *  学校ID getter
      */
-	public Integer GetSchoolId() {
+	public Integer getSchoolId() {
         return schoolid;
     }
     
     /**
-     *   setter
+     *  学校ID setter
      */
 	public void setSchoolId(Integer schoolid) {
         this.schoolid = schoolid;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

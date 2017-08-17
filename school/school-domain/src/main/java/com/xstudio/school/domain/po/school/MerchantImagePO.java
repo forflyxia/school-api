@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  商户图片信息
  */
 public class MerchantImagePo
 {
@@ -21,93 +21,100 @@ public class MerchantImagePo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  商户图片ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  商户图片ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  商户ID getter
      */
-	public Integer GetMerchantId() {
+	public Integer getMerchantId() {
         return merchantid;
     }
     
     /**
-     *   setter
+     *  商户ID setter
      */
 	public void setMerchantId(Integer merchantid) {
         this.merchantid = merchantid;
     }
+    
     /**
-     *   getter
+     *  图片ID getter
      */
-	public Integer GetImageId() {
+	public Integer getImageId() {
         return imageid;
     }
     
     /**
-     *   setter
+     *  图片ID setter
      */
 	public void setImageId(Integer imageid) {
         this.imageid = imageid;
     }
+    
     /**
-     *   getter
+     *  排序号 getter
      */
-	public Integer GetSequence() {
+	public Integer getSequence() {
         return sequence;
     }
     
     /**
-     *   setter
+     *  排序号 setter
      */
 	public void setSequence(Integer sequence) {
         this.sequence = sequence;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

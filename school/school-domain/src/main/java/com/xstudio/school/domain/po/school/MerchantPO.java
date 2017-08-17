@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  商户信息
  */
 public class MerchantPo
 {
@@ -34,262 +34,282 @@ public class MerchantPo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  商户ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  商户ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  名称 getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
     /**
-     *   setter
+     *  名称 setter
      */
 	public void setName(String name) {
         this.name = name;
     }
+    
     /**
-     *   getter
+     *  短名称 getter
      */
-	public String GetShortname() {
+	public String getShortname() {
         return shortname;
     }
     
     /**
-     *   setter
+     *  短名称 setter
      */
 	public void setShortname(String shortname) {
         this.shortname = shortname;
     }
+    
     /**
-     *   getter
+     *  分店 getter
      */
-	public String GetBranch() {
+	public String getBranch() {
         return branch;
     }
     
     /**
-     *   setter
+     *  分店 setter
      */
 	public void setBranch(String branch) {
         this.branch = branch;
     }
+    
     /**
-     *   getter
+     *  Logo getter
      */
-	public String GetLogo() {
+	public String getLogo() {
         return logo;
     }
     
     /**
-     *   setter
+     *  Logo setter
      */
 	public void setLogo(String logo) {
         this.logo = logo;
     }
+    
     /**
-     *   getter
+     *  简介 getter
      */
-	public String GetIntroduction() {
+	public String getIntroduction() {
         return introduction;
     }
     
     /**
-     *   setter
+     *  简介 setter
      */
 	public void setIntroduction(String introduction) {
         this.introduction = introduction;
     }
+    
     /**
-     *   getter
+     *  联系人 getter
      */
-	public String GetContact() {
+	public String getContact() {
         return contact;
     }
     
     /**
-     *   setter
+     *  联系人 setter
      */
 	public void setContact(String contact) {
         this.contact = contact;
     }
+    
     /**
-     *   getter
+     *  电话 getter
      */
-	public String GetTelphone() {
+	public String getTelphone() {
         return telphone;
     }
     
     /**
-     *   setter
+     *  电话 setter
      */
 	public void setTelphone(String telphone) {
         this.telphone = telphone;
     }
+    
     /**
-     *   getter
+     *  手机 getter
      */
-	public String GetMobliephone() {
+	public String getMobliephone() {
         return mobliephone;
     }
     
     /**
-     *   setter
+     *  手机 setter
      */
 	public void setMobliephone(String mobliephone) {
         this.mobliephone = mobliephone;
     }
+    
     /**
-     *   getter
+     *  营业执照 getter
      */
-	public String GetBusinesslicence() {
+	public String getBusinesslicence() {
         return businesslicence;
     }
     
     /**
-     *   setter
+     *  营业执照 setter
      */
 	public void setBusinesslicence(String businesslicence) {
         this.businesslicence = businesslicence;
     }
+    
     /**
-     *   getter
+     *  法人 getter
      */
-	public String GetLegalperson() {
+	public String getLegalperson() {
         return legalperson;
     }
     
     /**
-     *   setter
+     *  法人 setter
      */
 	public void setLegalperson(String legalperson) {
         this.legalperson = legalperson;
     }
+    
     /**
-     *   getter
+     *  行政区ID getter
      */
-	public Integer GetDistrictId() {
+	public Integer getDistrictId() {
         return districtid;
     }
     
     /**
-     *   setter
+     *  行政区ID setter
      */
 	public void setDistrictId(Integer districtid) {
         this.districtid = districtid;
     }
+    
     /**
-     *   getter
+     *  地址 getter
      */
-	public String GetAddress() {
+	public String getAddress() {
         return address;
     }
     
     /**
-     *   setter
+     *  地址 setter
      */
 	public void setAddress(String address) {
         this.address = address;
     }
+    
     /**
-     *   getter
+     *  经度 getter
      */
-	public Double GetLongitude() {
+	public Double getLongitude() {
         return longitude;
     }
     
     /**
-     *   setter
+     *  经度 setter
      */
 	public void setLongitude(Double longitude) {
         this.longitude = longitude;
     }
+    
     /**
-     *   getter
+     *  纬度 getter
      */
-	public Double GetLatitude() {
+	public Double getLatitude() {
         return latitude;
     }
     
     /**
-     *   setter
+     *  纬度 setter
      */
 	public void setLatitude(Double latitude) {
         this.latitude = latitude;
     }
+    
     /**
-     *   getter
+     *  现金 getter
      */
-	public Double GetCash() {
+	public Double getCash() {
         return cash;
     }
     
     /**
-     *   setter
+     *  现金 setter
      */
 	public void setCash(Double cash) {
         this.cash = cash;
     }
+    
     /**
-     *   getter
+     *  积分 getter
      */
-	public Double GetPoint() {
+	public Double getPoint() {
         return point;
     }
     
     /**
-     *   setter
+     *  积分 setter
      */
 	public void setPoint(Double point) {
         this.point = point;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

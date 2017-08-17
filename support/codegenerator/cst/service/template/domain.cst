@@ -1,0 +1,123 @@
+﻿<%-- 
+Name:           domain.cst
+Author:         hbxia
+Description:    
+--%>
+
+<%@ Template Language="C#" TargetLanguage="Java" ResponseEncoding="utf-8" Encoding="utf-8" %>
+
+<%@ Assembly Name="SchemaExplorer" %>
+<%@ Assembly Name="CodeSmith.BaseTemplates" %>
+<%@ Import Namespace="SchemaExplorer" %>
+<!-- #include file="../../../infrastructure.cst" -->
+<!-- #include file="../../../infrastructure.tablerelation.cst" -->
+
+<%@ Property Name="SourceTable" Type="SchemaExplorer.TableSchema" Description="目标数据表" Category="Context" %>
+<%@ Property Name="Namespace" Type="System.String" Default="" Category="Context" %>
+<%@ Property Name="TablePrefix" Type="System.String" Optional="True" Default="" Category="Context" %>
+
+/************************************************************************************************************************************************
+ * FileName:       <%=GetClassName(SourceTable) %>Po.java
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<% 
+    var foreignTableSchemaMap = new Dictionary<TableSchema, bool>();
+    foreach(ColumnSchema column in SourceTable.Columns)  {
+        var foreignTable = GetTableNameByForeignKey(column.Name);
+        if (!string.IsNullOrEmpty(foreignTable)) {
+            var foreginTableSchema = SourceTable.Database.Tables[foreignTable];
+            var foreginKeyType = GetForeignType(column);
+            if (foreginKeyType == 1) {
+        		 foreignTableSchemaMap.Add(foreginTableSchema, false);
+        	} else {
+                foreignTableSchemaMap.Add(foreginTableSchema, true);
+            }
+    	}
+    }
+%>
+
+package <%=Namespace%>.domain.<%=GetTablePrefix(SourceTable)%>;
+
+
+import java.util.Date;
+
+/**
+ *  <%=SourceTable.Description %>
+ */
+public class <%=GetClassName(SourceTable) %>
+{
+    
+    private <%=GetClassName(SourceTable) %>Po <%=GetClassNameVariable(SourceTable) %>Po;
+    <%foreach(var entry in foreignTableSchemaMap) { %>
+    <%if(entry.Value) { %>
+    private List<<%= GetClassName(entry.Key) %>Po> <%=GetClassNameVariable(entry.Key) %>Pos;
+    <% } else { %>
+    private <%= GetClassName(entry.Key) %>Po <%=GetClassNameVariable(entry.Key) %>Po;
+    <% } %>    
+    <% } %>
+
+    //self
+    <%foreach(ColumnSchema column in SourceTable.Columns) { %>
+    
+    /**
+     *  <%=GetDescription(column) %>
+     */
+	public <%=GetCSharpVariableType(column) %> get<%=FirstLetterToPascal(column.Name) %>() {
+        return <%=GetClassNameVariable(SourceTable) %>Po.get<%=FirstLetterToPascal(column.Name) %>();
+    }   
+    
+    <%} %>
+    
+    //foreign table
+    <%foreach(var entry in foreignTableSchemaMap) { %>
+    <%if(entry.Value) { %>
+    /**
+     *  <%=entry.Key.Description %>
+     */
+    public List<<%= GetClassName(entry.Key) %>> get<%=GetClassName(entry.Key) %>s() {
+        List<<%= GetClassName(entry.Key) %>> items = new ArrayList<<%= GetClassName(entry.Key) %>>();
+        if(!<%=GetClassNameVariable(entry.Key) %>Pos.isEmpty()) {
+            foeach(<%= GetClassName(entry.Key) %>Po <%=GetClassNameVariable(entry.Key) %>Po : <%=GetClassNameVariable(entry.Key) %>Pos) {
+                <%= GetClassName(entry.Key) %> item = new <%= GetClassName(entry.Key) %>();
+                <%foreach(ColumnSchema column in entry.Key.Columns) { %>
+                item.set<%=FirstLetterToPascal(column.Name) %>(<%=GetClassNameVariable(entry.Key) %>Po.get<%=FirstLetterToPascal(column.Name) %>())
+                <%} %>
+                items.add(item);
+            }
+        }
+        return items;
+    }
+    <% } else { %>
+    /**
+     *  <%=entry.Key.Description %>
+     */
+    public <%= GetClassName(entry.Key) %> get<%=GetClassName(entry.Key) %>() {
+        <%= GetClassName(entry.Key) %> item = new <%= GetClassName(entry.Key) %>();
+        if(!<%=GetClassNameVariable(entry.Key) %>Po != null) {
+        <%foreach(ColumnSchema column in entry.Key.Columns) { %>
+            item.set<%=FirstLetterToPascal(column.Name) %>(<%=GetClassNameVariable(entry.Key) %>Po.get<%=FirstLetterToPascal(column.Name) %>())
+        <%} %>
+        }
+        return item;
+    }
+    <% } %>
+    
+    <% } %>
+    
+    /**
+     *  Init
+     */
+    public <%=GetClassName(SourceTable) %> init(<%=GetClassName(SourceTable) %>Po <%=GetClassNameVariable(SourceTable) %>Po<%foreach(var entry in foreignTableSchemaMap) { %><%if(entry.Value) { %>, List<<%= GetClassName(entry.Key) %>Po> <%=GetClassNameVariable(entry.Key) %>Pos<% } else { %>,<%= GetClassName(entry.Key) %>Po <%=GetClassNameVariable(entry.Key) %>Po<% } %><% } %>) {
+        this.<%=GetClassName(SourceTable) %>Po = <%=GetClassNameVariable(SourceTable) %>Po;
+        <%foreach(var entry in foreignTableSchemaMap) { %>
+        <%if(entry.Value) { %>
+        this.<%=GetClassNameVariable(entry.Key) %>Pos = <%=GetClassNameVariable(entry.Key) %>Pos;
+        <% } else { %>
+        this.<%=GetClassNameVariable(entry.Key) %>Po = <%=GetClassNameVariable(entry.Key) %>Po;
+        <% } %>    
+        <% } %>
+        return this;
+    }
+}

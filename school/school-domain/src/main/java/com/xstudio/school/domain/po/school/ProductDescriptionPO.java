@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  产品描述信息
  */
 public class ProductDescriptionPo
 {
@@ -20,80 +20,86 @@ public class ProductDescriptionPo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  描述ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  描述ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  产品ID getter
      */
-	public Integer GetProductId() {
+	public Integer getProductId() {
         return productid;
     }
     
     /**
-     *   setter
+     *  产品ID setter
      */
 	public void setProductId(Integer productid) {
         this.productid = productid;
     }
+    
     /**
-     *   getter
+     *  描述 getter
      */
-	public String GetDescription() {
+	public String getDescription() {
         return description;
     }
     
     /**
-     *   setter
+     *  描述 setter
      */
 	public void setDescription(String description) {
         this.description = description;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

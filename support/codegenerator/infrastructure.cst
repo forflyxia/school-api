@@ -67,6 +67,12 @@ public string GetCSharpVariableType(ColumnSchema column)
     }
 }
 
+public string GetClassNameVariable(TableSchema sourceTable)
+{
+	var className = GetClassName(sourceTable.Name);
+    return FirstLetterToCamel(className);
+}
+
 public string GetClassName(TableSchema sourceTable)
 {
 	return GetClassName(sourceTable.Name);
@@ -212,7 +218,7 @@ public string GetEditInputCssName(ColumnSchema column)
 }
 
 /// <summary>
-/// 获取10个代码号（0000000000;1：可编辑；2：可查询；3：列表显示；4：富文本；5：外键；其他待定）
+/// 获取10个代码号（0000000000;1：可编辑；2：可查询；3：列表显示；4：富文本；5：外键类型(1:一对一;2:一对多)；其他待定）
 /// </summary>
 /// <param name="column"></param>
 /// <returns></returns>
@@ -310,21 +316,14 @@ public bool IsForeignKey(ColumnSchema column)
 }
 
 /// <summary>
-/// 是否可查询
+/// 是否外键
 /// </summary>
 /// <param name="column"></param>
 /// <returns></returns>
-public static bool IsQuery(ColumnSchema column)
+public int GetForeignType(ColumnSchema column) 
 {
     string number = GetTargetNumber(column);
-    if (number[1] == '1')
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return number[4];
 }
 
 /// <summary>
@@ -336,6 +335,24 @@ public static bool IsEdit(ColumnSchema column)
 {
     string number = GetTargetNumber(column);
     if (number[0] == '1')
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+/// <summary>
+/// 是否可查询
+/// </summary>
+/// <param name="column"></param>
+/// <returns></returns>
+public static bool IsQuery(ColumnSchema column)
+{
+    string number = GetTargetNumber(column);
+    if (number[1] == '1')
     {
         return true;
     }

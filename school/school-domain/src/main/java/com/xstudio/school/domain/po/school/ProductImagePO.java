@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  产品图片信息
  */
 public class ProductImagePo
 {
@@ -20,80 +20,86 @@ public class ProductImagePo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  产品图片ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  产品图片ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  产品ID getter
      */
-	public String GetProductId() {
+	public String getProductId() {
         return productid;
     }
     
     /**
-     *   setter
+     *  产品ID setter
      */
 	public void setProductId(String productid) {
         this.productid = productid;
     }
+    
     /**
-     *   getter
+     *  图片ID getter
      */
-	public String GetImageId() {
+	public String getImageId() {
         return imageid;
     }
     
     /**
-     *   setter
+     *  图片ID setter
      */
 	public void setImageId(String imageid) {
         this.imageid = imageid;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

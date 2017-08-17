@@ -7,9 +7,14 @@ package com.xstudio.school.domain.po.school;
 
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 /**
- *  
+ *  城市信息
  */
 public class CityPo
 {
@@ -24,132 +29,142 @@ public class CityPo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  城市ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  城市ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  名称 getter
      */
-	public String GetName() {
-        return name;
+	public String getName() {
+	    return name;
     }
     
     /**
-     *   setter
+     *  名称 setter
      */
 	public void setName(String name) {
         this.name = name;
     }
+    
     /**
-     *   getter
+     *  英文名称 getter
      */
-	public String GetEname() {
+	public String getEname() {
         return ename;
     }
     
     /**
-     *   setter
+     *  英文名称 setter
      */
 	public void setEname(String ename) {
         this.ename = ename;
     }
+    
     /**
-     *   getter
+     *  三字码 getter
      */
-	public String GetCitycode() {
+	public String getCitycode() {
         return citycode;
     }
     
     /**
-     *   setter
+     *  三字码 setter
      */
 	public void setCitycode(String citycode) {
         this.citycode = citycode;
     }
+    
     /**
-     *   getter
+     *  邮编 getter
      */
-	public String GetZipcode() {
+	public String getZipcode() {
         return zipcode;
     }
     
     /**
-     *   setter
+     *  邮编 setter
      */
 	public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
+    
     /**
-     *   getter
+     *  省份ID getter
      */
-	public Integer GetProvinceId() {
+	public Integer getProvinceId() {
         return provinceid;
     }
     
     /**
-     *   setter
+     *  省份ID setter
      */
 	public void setProvinceId(Integer provinceid) {
         this.provinceid = provinceid;
     }
+    
     /**
-     *   getter
+     *  国家ID getter
      */
-	public Integer GetCountryId() {
+	public Integer getCountryId() {
         return countryid;
     }
     
     /**
-     *   setter
+     *  国家ID setter
      */
 	public void setCountryId(Integer countryid) {
         this.countryid = countryid;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

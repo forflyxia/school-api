@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  促销信息
  */
 public class PromotionPo
 {
@@ -27,171 +27,184 @@ public class PromotionPo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  促销ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  促销ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  名称 getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
     /**
-     *   setter
+     *  名称 setter
      */
 	public void setName(String name) {
         this.name = name;
     }
+    
     /**
-     *   getter
+     *  短名称 getter
      */
-	public String GetShortname() {
+	public String getShortname() {
         return shortname;
     }
     
     /**
-     *   setter
+     *  短名称 setter
      */
 	public void setShortname(String shortname) {
         this.shortname = shortname;
     }
+    
     /**
-     *   getter
+     *  简介 getter
      */
-	public String GetDescription() {
+	public String getDescription() {
         return description;
     }
     
     /**
-     *   setter
+     *  简介 setter
      */
 	public void setDescription(String description) {
         this.description = description;
     }
+    
     /**
-     *   getter
+     *  适用产品类别ID getter
      */
-	public String GetProductcategoryId() {
+	public String getProductcategoryId() {
         return productcategoryid;
     }
     
     /**
-     *   setter
+     *  适用产品类别ID setter
      */
 	public void setProductcategoryId(String productcategoryid) {
         this.productcategoryid = productcategoryid;
     }
+    
     /**
-     *   getter
+     *  生效日期 getter
      */
-	public Date GetEffectdate() {
+	public Date getEffectdate() {
         return effectdate;
     }
     
     /**
-     *   setter
+     *  生效日期 setter
      */
 	public void setEffectdate(Date effectdate) {
         this.effectdate = effectdate;
     }
+    
     /**
-     *   getter
+     *  失效日期 getter
      */
-	public Date GetExpiredate() {
+	public Date getExpiredate() {
         return expiredate;
     }
     
     /**
-     *   setter
+     *  失效日期 setter
      */
 	public void setExpiredate(Date expiredate) {
         this.expiredate = expiredate;
     }
+    
     /**
-     *   getter
+     *  所属商户ID getter
      */
-	public Integer GetMerchantId() {
+	public Integer getMerchantId() {
         return merchantid;
     }
     
     /**
-     *   setter
+     *  所属商户ID setter
      */
 	public void setMerchantId(Integer merchantid) {
         this.merchantid = merchantid;
     }
+    
     /**
-     *   getter
+     *  商户承担金额 getter
      */
-	public Integer GetMerchantundertake() {
+	public Integer getMerchantundertake() {
         return merchantundertake;
     }
     
     /**
-     *   setter
+     *  商户承担金额 setter
      */
 	public void setMerchantundertake(Integer merchantundertake) {
         this.merchantundertake = merchantundertake;
     }
+    
     /**
-     *   getter
+     *  平台承担金额 getter
      */
-	public Integer GetPlatundertake() {
+	public Integer getPlatundertake() {
         return platundertake;
     }
     
     /**
-     *   setter
+     *  平台承担金额 setter
      */
 	public void setPlatundertake(Integer platundertake) {
         this.platundertake = platundertake;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

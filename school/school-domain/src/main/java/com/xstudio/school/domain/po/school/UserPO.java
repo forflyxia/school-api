@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  用户信息
  */
 public class UserPo
 {
@@ -28,184 +28,198 @@ public class UserPo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  用户ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  用户ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  名称 getter
      */
-	public String GetUsername() {
+	public String getUsername() {
         return username;
     }
     
     /**
-     *   setter
+     *  名称 setter
      */
 	public void setUsername(String username) {
         this.username = username;
     }
+    
     /**
-     *   getter
+     *  密码 getter
      */
-	public String GetPassword() {
+	public String getPassword() {
         return password;
     }
     
     /**
-     *   setter
+     *  密码 setter
      */
 	public void setPassword(String password) {
         this.password = password;
     }
+    
     /**
-     *   getter
+     *  昵称 getter
      */
-	public String GetNickname() {
+	public String getNickname() {
         return nickname;
     }
     
     /**
-     *   setter
+     *  昵称 setter
      */
 	public void setNickname(String nickname) {
         this.nickname = nickname;
     }
+    
     /**
-     *   getter
+     *  邮箱 getter
      */
-	public String GetEmail() {
+	public String getEmail() {
         return email;
     }
     
     /**
-     *   setter
+     *  邮箱 setter
      */
 	public void setEmail(String email) {
         this.email = email;
     }
+    
     /**
-     *   getter
+     *  用户类型 getter
      */
-	public String GetUsertype() {
+	public String getUsertype() {
         return usertype;
     }
     
     /**
-     *   setter
+     *  用户类型 setter
      */
 	public void setUsertype(String usertype) {
         this.usertype = usertype;
     }
+    
     /**
-     *   getter
+     *  手机 getter
      */
-	public String GetMoblie() {
+	public String getMoblie() {
         return moblie;
     }
     
     /**
-     *   setter
+     *  手机 setter
      */
 	public void setMoblie(String moblie) {
         this.moblie = moblie;
     }
+    
     /**
-     *   getter
+     *  性别 getter
      */
-	public Integer GetSex() {
+	public Integer getSex() {
         return sex;
     }
     
     /**
-     *   setter
+     *  性别 setter
      */
 	public void setSex(Integer sex) {
         this.sex = sex;
     }
+    
     /**
-     *   getter
+     *  所属学校ID getter
      */
-	public Integer GetSchoolId() {
+	public Integer getSchoolId() {
         return schoolid;
     }
     
     /**
-     *   setter
+     *  所属学校ID setter
      */
 	public void setSchoolId(Integer schoolid) {
         this.schoolid = schoolid;
     }
+    
     /**
-     *   getter
+     *  现金 getter
      */
-	public Double GetCash() {
+	public Double getCash() {
         return cash;
     }
     
     /**
-     *   setter
+     *  现金 setter
      */
 	public void setCash(Double cash) {
         this.cash = cash;
     }
+    
     /**
-     *   getter
+     *  积分 getter
      */
-	public Double GetPoint() {
+	public Double getPoint() {
         return point;
     }
     
     /**
-     *   setter
+     *  积分 setter
      */
 	public void setPoint(Double point) {
         this.point = point;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

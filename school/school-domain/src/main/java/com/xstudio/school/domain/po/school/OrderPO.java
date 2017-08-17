@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  订单信息
  */
 public class OrderPo
 {
@@ -30,210 +30,226 @@ public class OrderPo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  订单ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  订单ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  用户ID getter
      */
-	public Integer GetUserId() {
+	public Integer getUserId() {
         return userid;
     }
     
     /**
-     *   setter
+     *  用户ID setter
      */
 	public void setUserId(Integer userid) {
         this.userid = userid;
     }
+    
     /**
-     *   getter
+     *  联系人 getter
      */
-	public String GetContact() {
+	public String getContact() {
         return contact;
     }
     
     /**
-     *   setter
+     *  联系人 setter
      */
 	public void setContact(String contact) {
         this.contact = contact;
     }
+    
     /**
-     *   getter
+     *  电话 getter
      */
-	public String GetTelphone() {
+	public String getTelphone() {
         return telphone;
     }
     
     /**
-     *   setter
+     *  电话 setter
      */
 	public void setTelphone(String telphone) {
         this.telphone = telphone;
     }
+    
     /**
-     *   getter
+     *  手机 getter
      */
-	public String GetMobliephone() {
+	public String getMobliephone() {
         return mobliephone;
     }
     
     /**
-     *   setter
+     *  手机 setter
      */
 	public void setMobliephone(String mobliephone) {
         this.mobliephone = mobliephone;
     }
+    
     /**
-     *   getter
+     *  总金额 getter
      */
-	public Double GetTotalamount() {
+	public Double getTotalamount() {
         return totalamount;
     }
     
     /**
-     *   setter
+     *  总金额 setter
      */
 	public void setTotalamount(Double totalamount) {
         this.totalamount = totalamount;
     }
+    
     /**
-     *   getter
+     *  减免金额 getter
      */
-	public Double GetReduction() {
+	public Double getReduction() {
         return reduction;
     }
     
     /**
-     *   setter
+     *  减免金额 setter
      */
 	public void setReduction(Double reduction) {
         this.reduction = reduction;
     }
+    
     /**
-     *   getter
+     *  实收金额 getter
      */
-	public Double GetAmountpaId() {
+	public Double getAmountpaId() {
         return amountpaid;
     }
     
     /**
-     *   setter
+     *  实收金额 setter
      */
 	public void setAmountpaId(Double amountpaid) {
         this.amountpaid = amountpaid;
     }
+    
     /**
-     *   getter
+     *  优惠券ID getter
      */
-	public String GetPromotionId() {
+	public String getPromotionId() {
         return promotionid;
     }
     
     /**
-     *   setter
+     *  优惠券ID setter
      */
 	public void setPromotionId(String promotionid) {
         this.promotionid = promotionid;
     }
+    
     /**
-     *   getter
+     *  优惠阶梯ID getter
      */
-	public String GetPromotionladderId() {
+	public String getPromotionladderId() {
         return promotionladderid;
     }
     
     /**
-     *   setter
+     *  优惠阶梯ID setter
      */
 	public void setPromotionladderId(String promotionladderid) {
         this.promotionladderid = promotionladderid;
     }
+    
     /**
-     *   getter
+     *  配送学校ID getter
      */
-	public Integer GetSchoolId() {
+	public Integer getSchoolId() {
         return schoolid;
     }
     
     /**
-     *   setter
+     *  配送学校ID setter
      */
 	public void setSchoolId(Integer schoolid) {
         this.schoolid = schoolid;
     }
+    
     /**
-     *   getter
+     *  配送地址 getter
      */
-	public String GetDeliveryaddress() {
+	public String getDeliveryaddress() {
         return deliveryaddress;
     }
     
     /**
-     *   setter
+     *  配送地址 setter
      */
 	public void setDeliveryaddress(String deliveryaddress) {
         this.deliveryaddress = deliveryaddress;
     }
+    
     /**
-     *   getter
+     *  备注 getter
      */
-	public String GetRemark() {
+	public String getRemark() {
         return remark;
     }
     
     /**
-     *   setter
+     *  备注 setter
      */
 	public void setRemark(String remark) {
         this.remark = remark;
     }
+    
     /**
-     *   getter
+     *  订单状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  订单状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  用户消息
  */
 public class UserMessagePo
 {
@@ -20,80 +20,86 @@ public class UserMessagePo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  用户消息ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  用户消息ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  用户ID getter
      */
-	public Integer GetUserId() {
+	public Integer getUserId() {
         return userid;
     }
     
     /**
-     *   setter
+     *  用户ID setter
      */
 	public void setUserId(Integer userid) {
         this.userid = userid;
     }
+    
     /**
-     *   getter
+     *  消息 getter
      */
-	public String GetMessage() {
+	public String getMessage() {
         return message;
     }
     
     /**
-     *   setter
+     *  消息 setter
      */
 	public void setMessage(String message) {
         this.message = message;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  产品信息
  */
 public class ProductPo
 {
@@ -25,145 +25,156 @@ public class ProductPo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  产品ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  产品ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  名称:0000000000 getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
     /**
-     *   setter
+     *  名称:0000000000 setter
      */
 	public void setName(String name) {
         this.name = name;
     }
+    
     /**
-     *   getter
+     *  Logo getter
      */
-	public String GetLogo() {
+	public String getLogo() {
         return logo;
     }
     
     /**
-     *   setter
+     *  Logo setter
      */
 	public void setLogo(String logo) {
         this.logo = logo;
     }
+    
     /**
-     *   getter
+     *  类别 getter
      */
-	public Integer GetProductcategoryId() {
+	public Integer getProductcategoryId() {
         return productcategoryid;
     }
     
     /**
-     *   setter
+     *  类别 setter
      */
 	public void setProductcategoryId(Integer productcategoryid) {
         this.productcategoryid = productcategoryid;
     }
+    
     /**
-     *   getter
+     *  简介 getter
      */
-	public String GetIntroduction() {
+	public String getIntroduction() {
         return introduction;
     }
     
     /**
-     *   setter
+     *  简介 setter
      */
 	public void setIntroduction(String introduction) {
         this.introduction = introduction;
     }
+    
     /**
-     *   getter
+     *  商户ID getter
      */
-	public Integer GetMerchantId() {
+	public Integer getMerchantId() {
         return merchantid;
     }
     
     /**
-     *   setter
+     *  商户ID setter
      */
 	public void setMerchantId(Integer merchantid) {
         this.merchantid = merchantid;
     }
+    
     /**
-     *   getter
+     *  商户类别ID getter
      */
-	public Integer GetMerchantcustomcategoryId() {
+	public Integer getMerchantcustomcategoryId() {
         return merchantcustomcategoryid;
     }
     
     /**
-     *   setter
+     *  商户类别ID setter
      */
 	public void setMerchantcustomcategoryId(Integer merchantcustomcategoryid) {
         this.merchantcustomcategoryid = merchantcustomcategoryid;
     }
+    
     /**
-     *   getter
+     *  学校ID getter
      */
-	public Integer GetSchoolId() {
+	public Integer getSchoolId() {
         return schoolid;
     }
     
     /**
-     *   setter
+     *  学校ID setter
      */
 	public void setSchoolId(Integer schoolid) {
         this.schoolid = schoolid;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
-        return createtime;
+	public Date getCreatetime() {
+        return ;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

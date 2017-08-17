@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  订单详情信息
  */
 public class OrderDetailPo
 {
@@ -23,119 +23,128 @@ public class OrderDetailPo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  订单详情ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  订单详情ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  订单ID getter
      */
-	public Integer GetOrderId() {
+	public Integer getOrderId() {
         return orderid;
     }
     
     /**
-     *   setter
+     *  订单ID setter
      */
 	public void setOrderId(Integer orderid) {
         this.orderid = orderid;
     }
+    
     /**
-     *   getter
+     *  商品ID getter
      */
-	public Integer GetProductId() {
+	public Integer getProductId() {
         return productid;
     }
     
     /**
-     *   setter
+     *  商品ID setter
      */
 	public void setProductId(Integer productid) {
         this.productid = productid;
     }
+    
     /**
-     *   getter
+     *  商品规格ID getter
      */
-	public Integer GetProductsizeId() {
+	public Integer getProductsizeId() {
         return productsizeid;
     }
     
     /**
-     *   setter
+     *  商品规格ID setter
      */
 	public void setProductsizeId(Integer productsizeid) {
         this.productsizeid = productsizeid;
     }
+    
     /**
-     *   getter
+     *  单价 getter
      */
-	public Double GetUnitprice() {
+	public Double getUnitprice() {
         return unitprice;
     }
     
     /**
-     *   setter
+     *  单价 setter
      */
 	public void setUnitprice(Double unitprice) {
         this.unitprice = unitprice;
     }
+    
     /**
-     *   getter
+     *  购买数量 getter
      */
-	public Integer GetQuantity() {
+	public Integer getQuantity() {
         return quantity;
     }
     
     /**
-     *   setter
+     *  购买数量 setter
      */
 	public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
+    
     /**
-     *   getter
+     *  订单状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  订单状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;

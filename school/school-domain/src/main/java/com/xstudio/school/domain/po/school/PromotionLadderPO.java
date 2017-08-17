@@ -9,7 +9,7 @@ package com.xstudio.school.domain.po.school;
 import java.util.Date;
 
 /**
- *  
+ *  促销阶梯信息
  */
 public class PromotionLadderPo
 {
@@ -22,106 +22,114 @@ public class PromotionLadderPo
 	private Date createtime;
 	private Date updatetime;
 
+    
     /**
-     *   getter
+     *  促销阶梯ID getter
      */
-	public Integer GetId() {
+	public Integer getId() {
         return id;
     }
     
     /**
-     *   setter
+     *  促销阶梯ID setter
      */
 	public void setId(Integer id) {
         this.id = id;
     }
+    
     /**
-     *   getter
+     *  阶梯名称 getter
      */
-	public String GetName() {
+	public String getName() {
         return name;
     }
     
     /**
-     *   setter
+     *  阶梯名称 setter
      */
 	public void setName(String name) {
         this.name = name;
     }
+    
     /**
-     *   getter
+     *  促销ID getter
      */
-	public Integer GetPromotionId() {
+	public Integer getPromotionId() {
         return promotionid;
     }
     
     /**
-     *   setter
+     *  促销ID setter
      */
 	public void setPromotionId(Integer promotionid) {
         this.promotionid = promotionid;
     }
+    
     /**
-     *   getter
+     *  满多少 getter
      */
-	public Double GetTotalamount() {
+	public Double getTotalamount() {
         return totalamount;
     }
     
     /**
-     *   setter
+     *  满多少 setter
      */
 	public void setTotalamount(Double totalamount) {
         this.totalamount = totalamount;
     }
+    
     /**
-     *   getter
+     *  减多少 getter
      */
-	public Double GetReduction() {
+	public Double getReduction() {
         return reduction;
     }
     
     /**
-     *   setter
+     *  减多少 setter
      */
 	public void setReduction(Double reduction) {
         this.reduction = reduction;
     }
+    
     /**
-     *   getter
+     *  状态 getter
      */
-	public Integer GetStatus() {
+	public Integer getStatus() {
         return status;
     }
     
     /**
-     *   setter
+     *  状态 setter
      */
 	public void setStatus(Integer status) {
         this.status = status;
     }
+    
     /**
-     *   getter
+     *  创建时间 getter
      */
-	public Date GetCreatetime() {
+	public Date getCreatetime() {
         return createtime;
     }
     
     /**
-     *   setter
+     *  创建时间 setter
      */
 	public void setCreatetime(Date createtime) {
         this.createtime = createtime;
     }
+    
     /**
-     *   getter
+     *  修改时间 getter
      */
-	public Date GetUpdatetime() {
+	public Date getUpdatetime() {
         return updatetime;
     }
     
     /**
-     *   setter
+     *  修改时间 setter
      */
 	public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;
