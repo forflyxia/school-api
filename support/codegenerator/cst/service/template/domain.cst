@@ -40,8 +40,13 @@ Description:
 
 package <%=Namespace%>.domain.<%=GetTablePrefix(SourceTable)%>;
 
-
 import java.util.Date;
+import java.util.List;
+import java.util.ArrayList;
+import com.xstudio.school.domain.po.school.*;
+<%foreach(var entry in foreignTableSchemaMap) { %>
+import <%=Namespace%>.domain.<%=GetTablePrefix(entry.Key)%>.*;
+<% } %>
 
 /**
  *  <%=SourceTable.Description %>
@@ -79,11 +84,9 @@ public class <%=GetClassName(SourceTable) %>
     public List<<%= GetClassName(entry.Key) %>> get<%=GetClassName(entry.Key) %>s() {
         List<<%= GetClassName(entry.Key) %>> items = new ArrayList<<%= GetClassName(entry.Key) %>>();
         if(!<%=GetClassNameVariable(entry.Key) %>Pos.isEmpty()) {
-            foeach(<%= GetClassName(entry.Key) %>Po <%=GetClassNameVariable(entry.Key) %>Po : <%=GetClassNameVariable(entry.Key) %>Pos) {
+            for(<%= GetClassName(entry.Key) %>Po <%=GetClassNameVariable(entry.Key) %>Po : <%=GetClassNameVariable(entry.Key) %>Pos) {
                 <%= GetClassName(entry.Key) %> item = new <%= GetClassName(entry.Key) %>();
-                <%foreach(ColumnSchema column in entry.Key.Columns) { %>
-                item.set<%=FirstLetterToPascal(column.Name) %>(<%=GetClassNameVariable(entry.Key) %>Po.get<%=FirstLetterToPascal(column.Name) %>())
-                <%} %>
+                item.init(<%=GetClassNameVariable(entry.Key) %>Po);
                 items.add(item);
             }
         }
@@ -96,9 +99,7 @@ public class <%=GetClassName(SourceTable) %>
     public <%= GetClassName(entry.Key) %> get<%=GetClassName(entry.Key) %>() {
         <%= GetClassName(entry.Key) %> item = new <%= GetClassName(entry.Key) %>();
         if(!<%=GetClassNameVariable(entry.Key) %>Po != null) {
-        <%foreach(ColumnSchema column in entry.Key.Columns) { %>
-            item.set<%=FirstLetterToPascal(column.Name) %>(<%=GetClassNameVariable(entry.Key) %>Po.get<%=FirstLetterToPascal(column.Name) %>())
-        <%} %>
+            item.init(<%=GetClassNameVariable(entry.Key) %>Po);
         }
         return item;
     }
@@ -106,11 +107,13 @@ public class <%=GetClassName(SourceTable) %>
     
     <% } %>
     
+    <%if(foreignTableSchemaMap.Count > 0)  {%>
+    
     /**
      *  Init
      */
     public <%=GetClassName(SourceTable) %> init(<%=GetClassName(SourceTable) %>Po <%=GetClassNameVariable(SourceTable) %>Po<%foreach(var entry in foreignTableSchemaMap) { %><%if(entry.Value) { %>, List<<%= GetClassName(entry.Key) %>Po> <%=GetClassNameVariable(entry.Key) %>Pos<% } else { %>,<%= GetClassName(entry.Key) %>Po <%=GetClassNameVariable(entry.Key) %>Po<% } %><% } %>) {
-        this.<%=GetClassName(SourceTable) %>Po = <%=GetClassNameVariable(SourceTable) %>Po;
+        this.<%=GetClassNameVariable(SourceTable) %>Po = <%=GetClassNameVariable(SourceTable) %>Po;
         <%foreach(var entry in foreignTableSchemaMap) { %>
         <%if(entry.Value) { %>
         this.<%=GetClassNameVariable(entry.Key) %>Pos = <%=GetClassNameVariable(entry.Key) %>Pos;
@@ -120,4 +123,24 @@ public class <%=GetClassName(SourceTable) %>
         <% } %>
         return this;
     }
+    
+    /**
+     *  Init
+     */
+    public <%=GetClassName(SourceTable) %> init(<%=GetClassName(SourceTable) %>Po <%=GetClassNameVariable(SourceTable) %>Po) {
+        this.<%=GetClassNameVariable(SourceTable) %>Po = <%=GetClassNameVariable(SourceTable) %>Po;
+        return this;
+    }
+    
+    <% } else { %>
+    
+    /**
+     *  Init
+     */
+    public <%=GetClassName(SourceTable) %> init(<%=GetClassName(SourceTable) %>Po <%=GetClassNameVariable(SourceTable) %>Po) {
+        this.<%=GetClassNameVariable(SourceTable) %>Po = <%=GetClassNameVariable(SourceTable) %>Po;
+        return this;
+    }
+    
+    <% } %>
 }

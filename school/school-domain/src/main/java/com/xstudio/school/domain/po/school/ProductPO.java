@@ -41,14 +41,14 @@ public class ProductPo
     }
     
     /**
-     *  名称:0000000000 getter
+     *  名称: getter
      */
 	public String getName() {
         return name;
     }
     
     /**
-     *  名称:0000000000 setter
+     *  名称: setter
      */
 	public void setName(String name) {
         this.name = name;
@@ -156,7 +156,7 @@ public class ProductPo
      *  创建时间 getter
      */
 	public Date getCreatetime() {
-        return ;
+        return createtime;
     }
     
     /**

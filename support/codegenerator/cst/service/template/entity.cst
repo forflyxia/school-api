@@ -37,14 +37,14 @@ public class <%=GetClassName(SourceTable) %>Po
     <%foreach(ColumnSchema column in SourceTable.Columns) { %>
     
     /**
-     *  <%=column.Description %> getter
+     *  <%=GetDescription(column) %> getter
      */
 	public <%=GetCSharpVariableType(column) %> get<%=FirstLetterToPascal(column.Name) %>() {
         return <%=FirstLetterToCamel(column.Name) %>;
     }
     
     /**
-     *  <%=column.Description %> setter
+     *  <%=GetDescription(column) %> setter
      */
 	public void set<%=FirstLetterToPascal(column.Name) %>(<%=GetCSharpVariableType(column) %> <%=FirstLetterToCamel(column.Name) %>) {
         this.<%=FirstLetterToCamel(column.Name) %> = <%=FirstLetterToCamel(column.Name) %>;

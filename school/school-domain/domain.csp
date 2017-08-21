@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<codeSmith xmlns="http://www.codesmithtools.com/schema/csp.xsd">
+    <propertySets>	
+          <propertySet name="basic_city" output="src\main\java\com\xstudio\school\domain\basic\City.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_city</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="basic_country" output="src\main\java\com\xstudio\school\domain\basic\Country.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_country</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="basic_district" output="src\main\java\com\xstudio\school\domain\basic\District.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_district</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="basic_province" output="src\main\java\com\xstudio\school\domain\basic\Province.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_province</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="image_image" output="src\main\java\com\xstudio\school\domain\image\Image.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>image_image</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant" output="src\main\java\com\xstudio\school\domain\merchant\Merchant.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant_custom_category" output="src\main\java\com\xstudio\school\domain\merchant\MerchantCustomCategory.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant_custom_category</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant_image" output="src\main\java\com\xstudio\school\domain\merchant\MerchantImage.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant_image</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant_message" output="src\main\java\com\xstudio\school\domain\merchant\MerchantMessage.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant_message</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="order_order" output="src\main\java\com\xstudio\school\domain\order\Order.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>order_order</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="order_order_detail" output="src\main\java\com\xstudio\school\domain\order\OrderDetail.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>order_order_detail</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product" output="src\main\java\com\xstudio\school\domain\product\Product.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_category" output="src\main\java\com\xstudio\school\domain\product\ProductCategory.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_category</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_description" output="src\main\java\com\xstudio\school\domain\product\ProductDescription.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_description</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_image" output="src\main\java\com\xstudio\school\domain\product\ProductImage.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_image</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_size" output="src\main\java\com\xstudio\school\domain\product\ProductSize.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_size</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="promotion_promotion" output="src\main\java\com\xstudio\school\domain\promotion\Promotion.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>promotion_promotion</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="promotion_promotion_ladder" output="src\main\java\com\xstudio\school\domain\promotion\PromotionLadder.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>promotion_promotion_ladder</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="school_school" output="src\main\java\com\xstudio\school\domain\school\School.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>school_school</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="school_school_business" output="src\main\java\com\xstudio\school\domain\school\SchoolBusiness.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>school_school_business</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="school_school_news" output="src\main\java\com\xstudio\school\domain\school\SchoolNews.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>school_school_news</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="user_user" output="src\main\java\com\xstudio\school\domain\user\User.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>user_user</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="user_user_message" output="src\main\java\com\xstudio\school\domain\user\UserMessage.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>user_user_message</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="user_user_task" output="src\main\java\com\xstudio\school\domain\user\UserTask.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>user_user_task</name>
+                </table>
+              </property>
+        </propertySet>
+  </propertySets>
+</codeSmith>

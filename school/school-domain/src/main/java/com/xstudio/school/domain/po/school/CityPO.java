@@ -7,11 +7,6 @@ package com.xstudio.school.domain.po.school;
 
 
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.concurrent.Semaphore;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 /**
  *  城市信息
@@ -48,7 +43,7 @@ public class CityPo
      *  名称 getter
      */
 	public String getName() {
-	    return name;
+        return name;
     }
     
     /**

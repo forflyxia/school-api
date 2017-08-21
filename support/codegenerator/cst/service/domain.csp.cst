@@ -21,7 +21,7 @@ Description:    数据库实体模板
     <propertySets>	
      <% foreach(SchemaExplorer.TableSchema SourceTable in SourceDatabase.Tables) { %>
         <% if(CanGenerated(SourceTable, TablePrefix, SpecifyTableName)) { %>
-          <propertySet name="<%=SourceTable.Name%>" output="src\main\java\<%=Namespace.Replace(".", "\\") %>\domain\po\<%=SourceDatabase.Name%>\<%=GetClassName(SourceTable) %>PO.java" template="..\..\support\codegenerator\cst\service\template\entity.cst">
+          <propertySet name="<%=SourceTable.Name%>" output="src\main\java\<%=Namespace.Replace(".", "\\") %>\domain\<%=GetTablePrefix(SourceTable) %>\<%=GetClassName(SourceTable) %>.java" template="..\..\support\codegenerator\cst\service\template\domain.cst">
               <property name="Namespace"><%=Namespace %></property>
               <property name="SourceTable">
                 <connectionString><%=SourceTable.Database.ConnectionString%></connectionString>
