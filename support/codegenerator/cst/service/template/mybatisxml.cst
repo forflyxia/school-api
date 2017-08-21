@@ -1,0 +1,82 @@
+﻿<%-- 
+Name:           mybatis.cst
+Author:         hbxia
+Description:    
+--%>
+
+<%@ Template Language="C#" TargetLanguage="XML" ResponseEncoding="utf-8" Encoding="utf-8" %>
+
+<%@ Assembly Name="SchemaExplorer" %>
+<%@ Assembly Name="CodeSmith.BaseTemplates" %>
+<%@ Import Namespace="SchemaExplorer" %>
+<!-- #include file="../../../infrastructure.cst" -->
+
+<%@ Property Name="SourceTable" Type="SchemaExplorer.TableSchema" Description="目标数据表" Category="Context" %>
+<%@ Property Name="Namespace" Type="System.String" Default="" Category="Context" %>
+<%@ Property Name="TablePrefix" Type="System.String" Optional="True" Default="" Category="Context" %>
+
+/************************************************************************************************************************************************
+ * FileName:       <%=GetClassName(SourceTable) %>Mapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="<%=Namespace%>.repository.mapper.<%=SourceTable.Database.Name %>.<%=GetClassName(SourceTable) %>Mapper">
+
+	<select id="get<%=GetClassName(SourceTable) %>s" resultType="<%=Namespace%>.domain.po.<%=SourceTable.Database.Name %>.<%=GetClassName(SourceTable) %>Po">
+		SELECT * FROM <%=SourceTable.Name %> WHERE status = 1;
+	</select>
+
+	<select id="get<%=GetClassName(SourceTable) %>" parameterType="Integer" resultType="<%=Namespace%>.domain.po.<%=SourceTable.Database.Name %>.<%=GetClassName(SourceTable) %>Po">
+        SELECT * FROM <%=SourceTable.Name %> WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="get<%=GetClassName(SourceTable) %>sByIds" parameterType="String" resultType="<%=Namespace%>.domain.po.<%=SourceTable.Database.Name %>.<%=GetClassName(SourceTable) %>Po">
+		SELECT * FROM <%=SourceTable.Name %> WHERE status = 1;
+	</select>
+    
+    <update id="update<%=GetClassName(SourceTable) %>" parameterType="<%=Namespace%>.domain.po.<%=SourceTable.Database.Name %>.<%=GetClassName(SourceTable) %>Po">
+		UPDATE
+			<%=SourceTable.Name %>
+		SET
+            <%foreach(ColumnSchema column in SourceTable.Columns) { %>      
+        	<%=column.Name %> = '${<%=FirstLetterToCamel(column.Name) %>}',
+            <%} %>
+		WHERE
+            <%
+            int index = 0;
+            int count = SourceTable.PrimaryKeys.Count;
+            if(count > 0) { 
+            %>            
+            <%foreach(TableKeySchema primaryKey in SourceTable.PrimaryKeys) { %>
+            <%if(index == count) { %>   
+            And
+            <%=primaryKey.Name %> = ${<%=primaryKey.Name %>}
+            <% index++;} %>
+			<%} %>
+            <%} else { %>
+            id = ${id}
+            <%} %>
+    </update>
+
+	<insert id="insert<%=GetClassName(SourceTable) %>" parameterType="<%=Namespace%>.domain.po.<%=SourceTable.Database.Name %>.<%=GetClassName(SourceTable) %>Po">
+        INSERT INTO <%=SourceTable.Name %>(
+            <%
+            int index1 = 0;
+            int count1 = SourceTable.Columns.Count;
+            foreach(ColumnSchema column in SourceTable.Columns) { 
+            %>      
+        	'<%=column.Name %>'<%if(index1 != count1-1) { %>,<%} %>
+            <% index1++; } %>)
+		VALUES (
+            <%
+            int index2 = 0;
+            int count2 = SourceTable.Columns.Count;
+            foreach(ColumnSchema column in SourceTable.Columns) { 
+            %>      
+            '${<%=FirstLetterToCamel(column.Name) %>}'<%if(index2 != count2-1) { %>,<%} %>
+            <%index2++;} %>);
+	</insert>
+</mapper>
