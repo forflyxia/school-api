@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<codeSmith xmlns="http://www.codesmithtools.com/schema/csp.xsd">
+    <propertySets>	
+          <propertySet name="basic_city" output="src\main\java\com\xstudio\school\repository\school\mapper\CityMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_city</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="basic_country" output="src\main\java\com\xstudio\school\repository\school\mapper\CountryMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_country</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="basic_district" output="src\main\java\com\xstudio\school\repository\school\mapper\DistrictMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_district</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="basic_province" output="src\main\java\com\xstudio\school\repository\school\mapper\ProvinceMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_province</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="image_image" output="src\main\java\com\xstudio\school\repository\school\mapper\ImageMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>image_image</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant" output="src\main\java\com\xstudio\school\repository\school\mapper\MerchantMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant_custom_category" output="src\main\java\com\xstudio\school\repository\school\mapper\MerchantCustomCategoryMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant_custom_category</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant_image" output="src\main\java\com\xstudio\school\repository\school\mapper\MerchantImageMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant_image</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant_message" output="src\main\java\com\xstudio\school\repository\school\mapper\MerchantMessageMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant_message</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="order_order" output="src\main\java\com\xstudio\school\repository\school\mapper\OrderMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>order_order</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="order_order_detail" output="src\main\java\com\xstudio\school\repository\school\mapper\OrderDetailMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>order_order_detail</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product" output="src\main\java\com\xstudio\school\repository\school\mapper\ProductMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_category" output="src\main\java\com\xstudio\school\repository\school\mapper\ProductCategoryMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_category</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_description" output="src\main\java\com\xstudio\school\repository\school\mapper\ProductDescriptionMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_description</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_image" output="src\main\java\com\xstudio\school\repository\school\mapper\ProductImageMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_image</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_size" output="src\main\java\com\xstudio\school\repository\school\mapper\ProductSizeMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_size</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="promotion_promotion" output="src\main\java\com\xstudio\school\repository\school\mapper\PromotionMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>promotion_promotion</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="promotion_promotion_ladder" output="src\main\java\com\xstudio\school\repository\school\mapper\PromotionLadderMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>promotion_promotion_ladder</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="school_school" output="src\main\java\com\xstudio\school\repository\school\mapper\SchoolMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>school_school</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="school_school_business" output="src\main\java\com\xstudio\school\repository\school\mapper\SchoolBusinessMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>school_school_business</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="school_school_news" output="src\main\java\com\xstudio\school\repository\school\mapper\SchoolNewsMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>school_school_news</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="user_user" output="src\main\java\com\xstudio\school\repository\school\mapper\UserMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>user_user</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="user_user_message" output="src\main\java\com\xstudio\school\repository\school\mapper\UserMessageMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>user_user_message</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="user_user_task" output="src\main\java\com\xstudio\school\repository\school\mapper\UserTaskMapper.java" template="..\..\support\codegenerator\cst\service\template\mybatismapper.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>user_user_task</name>
+                </table>
+              </property>
+        </propertySet>
+  </propertySets>
+</codeSmith>

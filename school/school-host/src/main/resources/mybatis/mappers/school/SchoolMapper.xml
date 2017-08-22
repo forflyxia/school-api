@@ -1,0 +1,76 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       SchoolMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.SchoolMapper">
+
+	<select id="getSchools" resultType="com.xstudio.school.domain.po.school.SchoolPo">
+		SELECT * FROM school_school WHERE status = 1;
+	</select>
+
+	<select id="getSchool" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.SchoolPo">
+        SELECT * FROM school_school WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getSchoolsByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.SchoolPo">
+		SELECT * FROM school_school WHERE status = 1;
+	</select>
+    
+    <update id="updateSchool" parameterType="com.xstudio.school.domain.po.school.SchoolPo">
+		UPDATE
+			school_school
+		SET
+        	id = '${id}',
+        	name = '${name}',
+        	shortname = '${shortname}',
+        	branchname = '${branchname}',
+        	logo = '${logo}',
+        	introduction = '${introduction}',
+        	districtid = '${districtid}',
+        	address = '${address}',
+        	longitude = '${longitude}',
+        	latitude = '${latitude}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertSchool" parameterType="com.xstudio.school.domain.po.school.SchoolPo">
+        INSERT INTO school_school(
+        	'id',
+                    	'name',
+                    	'shortname',
+                    	'branchname',
+                    	'logo',
+                    	'introduction',
+                    	'districtid',
+                    	'address',
+                    	'longitude',
+                    	'latitude',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${name}',
+                        '${shortname}',
+                        '${branchname}',
+                        '${logo}',
+                        '${introduction}',
+                        '${districtid}',
+                        '${address}',
+                        '${longitude}',
+                        '${latitude}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

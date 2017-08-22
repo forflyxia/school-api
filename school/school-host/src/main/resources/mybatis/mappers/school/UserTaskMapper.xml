@@ -1,0 +1,55 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       UserTaskMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.UserTaskMapper">
+
+	<select id="getUserTasks" resultType="com.xstudio.school.domain.po.school.UserTaskPo">
+		SELECT * FROM user_user_task WHERE status = 1;
+	</select>
+
+	<select id="getUserTask" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.UserTaskPo">
+        SELECT * FROM user_user_task WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getUserTasksByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.UserTaskPo">
+		SELECT * FROM user_user_task WHERE status = 1;
+	</select>
+    
+    <update id="updateUserTask" parameterType="com.xstudio.school.domain.po.school.UserTaskPo">
+		UPDATE
+			user_user_task
+		SET
+        	id = '${id}',
+        	userid = '${userid}',
+        	orderid = '${orderid}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertUserTask" parameterType="com.xstudio.school.domain.po.school.UserTaskPo">
+        INSERT INTO user_user_task(
+        	'id',
+                    	'userid',
+                    	'orderid',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${userid}',
+                        '${orderid}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

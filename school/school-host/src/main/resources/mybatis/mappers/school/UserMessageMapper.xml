@@ -1,0 +1,55 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       UserMessageMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.UserMessageMapper">
+
+	<select id="getUserMessages" resultType="com.xstudio.school.domain.po.school.UserMessagePo">
+		SELECT * FROM user_user_message WHERE status = 1;
+	</select>
+
+	<select id="getUserMessage" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.UserMessagePo">
+        SELECT * FROM user_user_message WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getUserMessagesByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.UserMessagePo">
+		SELECT * FROM user_user_message WHERE status = 1;
+	</select>
+    
+    <update id="updateUserMessage" parameterType="com.xstudio.school.domain.po.school.UserMessagePo">
+		UPDATE
+			user_user_message
+		SET
+        	id = '${id}',
+        	userid = '${userid}',
+        	message = '${message}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertUserMessage" parameterType="com.xstudio.school.domain.po.school.UserMessagePo">
+        INSERT INTO user_user_message(
+        	'id',
+                    	'userid',
+                    	'message',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${userid}',
+                        '${message}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

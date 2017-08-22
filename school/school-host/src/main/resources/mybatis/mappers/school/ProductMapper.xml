@@ -1,0 +1,70 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       ProductMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.ProductMapper">
+
+	<select id="getProducts" resultType="com.xstudio.school.domain.po.school.ProductPo">
+		SELECT * FROM product_product WHERE status = 1;
+	</select>
+
+	<select id="getProduct" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.ProductPo">
+        SELECT * FROM product_product WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getProductsByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.ProductPo">
+		SELECT * FROM product_product WHERE status = 1;
+	</select>
+    
+    <update id="updateProduct" parameterType="com.xstudio.school.domain.po.school.ProductPo">
+		UPDATE
+			product_product
+		SET
+        	id = '${id}',
+        	name = '${name}',
+        	logo = '${logo}',
+        	productcategoryid = '${productcategoryid}',
+        	introduction = '${introduction}',
+        	merchantid = '${merchantid}',
+        	merchantcustomcategoryid = '${merchantcustomcategoryid}',
+        	schoolid = '${schoolid}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertProduct" parameterType="com.xstudio.school.domain.po.school.ProductPo">
+        INSERT INTO product_product(
+        	'id',
+                    	'name',
+                    	'logo',
+                    	'productcategoryid',
+                    	'introduction',
+                    	'merchantid',
+                    	'merchantcustomcategoryid',
+                    	'schoolid',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${name}',
+                        '${logo}',
+                        '${productcategoryid}',
+                        '${introduction}',
+                        '${merchantid}',
+                        '${merchantcustomcategoryid}',
+                        '${schoolid}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

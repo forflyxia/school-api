@@ -1,0 +1,55 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       ProductDescriptionMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.ProductDescriptionMapper">
+
+	<select id="getProductDescriptions" resultType="com.xstudio.school.domain.po.school.ProductDescriptionPo">
+		SELECT * FROM product_product_description WHERE status = 1;
+	</select>
+
+	<select id="getProductDescription" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.ProductDescriptionPo">
+        SELECT * FROM product_product_description WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getProductDescriptionsByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.ProductDescriptionPo">
+		SELECT * FROM product_product_description WHERE status = 1;
+	</select>
+    
+    <update id="updateProductDescription" parameterType="com.xstudio.school.domain.po.school.ProductDescriptionPo">
+		UPDATE
+			product_product_description
+		SET
+        	id = '${id}',
+        	productid = '${productid}',
+        	description = '${description}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertProductDescription" parameterType="com.xstudio.school.domain.po.school.ProductDescriptionPo">
+        INSERT INTO product_product_description(
+        	'id',
+                    	'productid',
+                    	'description',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${productid}',
+                        '${description}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

@@ -1,0 +1,76 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       PromotionMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.PromotionMapper">
+
+	<select id="getPromotions" resultType="com.xstudio.school.domain.po.school.PromotionPo">
+		SELECT * FROM promotion_promotion WHERE status = 1;
+	</select>
+
+	<select id="getPromotion" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.PromotionPo">
+        SELECT * FROM promotion_promotion WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getPromotionsByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.PromotionPo">
+		SELECT * FROM promotion_promotion WHERE status = 1;
+	</select>
+    
+    <update id="updatePromotion" parameterType="com.xstudio.school.domain.po.school.PromotionPo">
+		UPDATE
+			promotion_promotion
+		SET
+        	id = '${id}',
+        	name = '${name}',
+        	shortname = '${shortname}',
+        	description = '${description}',
+        	productcategoryid = '${productcategoryid}',
+        	effectdate = '${effectdate}',
+        	expiredate = '${expiredate}',
+        	merchantid = '${merchantid}',
+        	merchantundertake = '${merchantundertake}',
+        	platundertake = '${platundertake}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertPromotion" parameterType="com.xstudio.school.domain.po.school.PromotionPo">
+        INSERT INTO promotion_promotion(
+        	'id',
+                    	'name',
+                    	'shortname',
+                    	'description',
+                    	'productcategoryid',
+                    	'effectdate',
+                    	'expiredate',
+                    	'merchantid',
+                    	'merchantundertake',
+                    	'platundertake',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${name}',
+                        '${shortname}',
+                        '${description}',
+                        '${productcategoryid}',
+                        '${effectdate}',
+                        '${expiredate}',
+                        '${merchantid}',
+                        '${merchantundertake}',
+                        '${platundertake}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

@@ -1,0 +1,55 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       SchoolBusinessMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.SchoolBusinessMapper">
+
+	<select id="getSchoolBusinesss" resultType="com.xstudio.school.domain.po.school.SchoolBusinessPo">
+		SELECT * FROM school_school_business WHERE status = 1;
+	</select>
+
+	<select id="getSchoolBusiness" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.SchoolBusinessPo">
+        SELECT * FROM school_school_business WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getSchoolBusinesssByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.SchoolBusinessPo">
+		SELECT * FROM school_school_business WHERE status = 1;
+	</select>
+    
+    <update id="updateSchoolBusiness" parameterType="com.xstudio.school.domain.po.school.SchoolBusinessPo">
+		UPDATE
+			school_school_business
+		SET
+        	id = '${id}',
+        	schoolid = '${schoolid}',
+        	name = '${name}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertSchoolBusiness" parameterType="com.xstudio.school.domain.po.school.SchoolBusinessPo">
+        INSERT INTO school_school_business(
+        	'id',
+                    	'schoolid',
+                    	'name',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${schoolid}',
+                        '${name}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

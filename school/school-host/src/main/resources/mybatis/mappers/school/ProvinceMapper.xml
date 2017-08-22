@@ -1,0 +1,58 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       ProvinceMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.ProvinceMapper">
+
+	<select id="getProvinces" resultType="com.xstudio.school.domain.po.school.ProvincePo">
+		SELECT * FROM basic_province WHERE status = 1;
+	</select>
+
+	<select id="getProvince" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.ProvincePo">
+        SELECT * FROM basic_province WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getProvincesByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.ProvincePo">
+		SELECT * FROM basic_province WHERE status = 1;
+	</select>
+    
+    <update id="updateProvince" parameterType="com.xstudio.school.domain.po.school.ProvincePo">
+		UPDATE
+			basic_province
+		SET
+        	id = '${id}',
+        	name = '${name}',
+        	ename = '${ename}',
+        	countryid = '${countryid}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertProvince" parameterType="com.xstudio.school.domain.po.school.ProvincePo">
+        INSERT INTO basic_province(
+        	'id',
+                    	'name',
+                    	'ename',
+                    	'countryid',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${name}',
+                        '${ename}',
+                        '${countryid}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

@@ -28,6 +28,35 @@
       <property name="TablePrefix">$(TablePrefix)</property>
       <property name="SpecifyTableName">$(SpecifyTableName)</property>
     </propertySet>
-	
+	<propertySet name="mybatisxml" output="$(BaseDir)\school-host\mybatisxml.csp" template="cst\service\mybatisxml.csp.cst">
+      <property name="SourceDatabase">
+        <connectionString>$(ConnectionString1)</connectionString>
+        <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+      </property>
+      <property name="BaseDir">$(BaseDir)</property>
+      <property name="Namespace">$(Namespace)</property>
+      <property name="TablePrefix">$(TablePrefix)</property>
+      <property name="SpecifyTableName">$(SpecifyTableName)</property>
+    </propertySet>
+	<propertySet name="mybatismapper" output="$(BaseDir)\school-repository\mybatismapper.csp" template="cst\service\mybatismapper.csp.cst">
+      <property name="SourceDatabase">
+        <connectionString>$(ConnectionString1)</connectionString>
+        <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+      </property>
+      <property name="BaseDir">$(BaseDir)</property>
+      <property name="Namespace">$(Namespace)</property>
+      <property name="TablePrefix">$(TablePrefix)</property>
+      <property name="SpecifyTableName">$(SpecifyTableName)</property>
+    </propertySet>
+	<propertySet name="repository" output="$(BaseDir)\school-repository\repository.csp" template="cst\service\repository.csp.cst">
+      <property name="SourceDatabase">
+        <connectionString>$(ConnectionString1)</connectionString>
+        <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+      </property>
+      <property name="BaseDir">$(BaseDir)</property>
+      <property name="Namespace">$(Namespace)</property>
+      <property name="TablePrefix">$(TablePrefix)</property>
+      <property name="SpecifyTableName">$(SpecifyTableName)</property>
+    </propertySet>
   </propertySets>
 </codeSmith>

@@ -1,0 +1,55 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       ProductCategoryMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.ProductCategoryMapper">
+
+	<select id="getProductCategorys" resultType="com.xstudio.school.domain.po.school.ProductCategoryPo">
+		SELECT * FROM product_product_category WHERE status = 1;
+	</select>
+
+	<select id="getProductCategory" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.ProductCategoryPo">
+        SELECT * FROM product_product_category WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getProductCategorysByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.ProductCategoryPo">
+		SELECT * FROM product_product_category WHERE status = 1;
+	</select>
+    
+    <update id="updateProductCategory" parameterType="com.xstudio.school.domain.po.school.ProductCategoryPo">
+		UPDATE
+			product_product_category
+		SET
+        	id = '${id}',
+        	name = '${name}',
+        	parentcategoryid = '${parentcategoryid}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertProductCategory" parameterType="com.xstudio.school.domain.po.school.ProductCategoryPo">
+        INSERT INTO product_product_category(
+        	'id',
+                    	'name',
+                    	'parentcategoryid',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${name}',
+                        '${parentcategoryid}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

@@ -17,7 +17,7 @@ Description:
 <%@ Property Name="TablePrefix" Type="System.String" Optional="True" Default="" Category="Context" %>
 
 /************************************************************************************************************************************************
- * FileName:       <%=GetClassName(SourceTable) %>Po.java
+ * FileName:       <%=GetClassName(SourceTable) %>.java
  * Author:         hbxia
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
@@ -124,23 +124,12 @@ public class <%=GetClassName(SourceTable) %>
         return this;
     }
     
-    /**
-     *  Init
-     */
-    public <%=GetClassName(SourceTable) %> init(<%=GetClassName(SourceTable) %>Po <%=GetClassNameVariable(SourceTable) %>Po) {
-        this.<%=GetClassNameVariable(SourceTable) %>Po = <%=GetClassNameVariable(SourceTable) %>Po;
-        return this;
-    }
-    
-    <% } else { %>
-    
-    /**
-     *  Init
-     */
-    public <%=GetClassName(SourceTable) %> init(<%=GetClassName(SourceTable) %>Po <%=GetClassNameVariable(SourceTable) %>Po) {
-        this.<%=GetClassNameVariable(SourceTable) %>Po = <%=GetClassNameVariable(SourceTable) %>Po;
-        return this;
-    }
-    
     <% } %>
+    
+    /**
+     *  Init
+     */
+    public <%=GetClassName(SourceTable) %> init(<%=GetClassName(SourceTable) %>Po <%=GetClassNameVariable(SourceTable) %>Po) {
+        return init(<%=GetClassNameVariable(SourceTable) %>Po<%foreach(var entry in foreignTableSchemaMap) { %><%if(entry.Value) { %>, null<% } } %>);
+    }
 }

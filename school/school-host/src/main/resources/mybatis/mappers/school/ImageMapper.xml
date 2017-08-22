@@ -1,0 +1,64 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       ImageMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.ImageMapper">
+
+	<select id="getImages" resultType="com.xstudio.school.domain.po.school.ImagePo">
+		SELECT * FROM image_image WHERE status = 1;
+	</select>
+
+	<select id="getImage" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.ImagePo">
+        SELECT * FROM image_image WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getImagesByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.ImagePo">
+		SELECT * FROM image_image WHERE status = 1;
+	</select>
+    
+    <update id="updateImage" parameterType="com.xstudio.school.domain.po.school.ImagePo">
+		UPDATE
+			image_image
+		SET
+        	id = '${id}',
+        	name = '${name}',
+        	url = '${url}',
+        	introduction = '${introduction}',
+        	merchantid = '${merchantid}',
+        	schoolid = '${schoolid}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertImage" parameterType="com.xstudio.school.domain.po.school.ImagePo">
+        INSERT INTO image_image(
+        	'id',
+                    	'name',
+                    	'url',
+                    	'introduction',
+                    	'merchantid',
+                    	'schoolid',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${name}',
+                        '${url}',
+                        '${introduction}',
+                        '${merchantid}',
+                        '${schoolid}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

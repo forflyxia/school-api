@@ -1,0 +1,61 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       DistrictMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.DistrictMapper">
+
+	<select id="getDistricts" resultType="com.xstudio.school.domain.po.school.DistrictPo">
+		SELECT * FROM basic_district WHERE status = 1;
+	</select>
+
+	<select id="getDistrict" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.DistrictPo">
+        SELECT * FROM basic_district WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getDistrictsByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.DistrictPo">
+		SELECT * FROM basic_district WHERE status = 1;
+	</select>
+    
+    <update id="updateDistrict" parameterType="com.xstudio.school.domain.po.school.DistrictPo">
+		UPDATE
+			basic_district
+		SET
+        	id = '${id}',
+        	name = '${name}',
+        	ename = '${ename}',
+        	zipcode = '${zipcode}',
+        	cityid = '${cityid}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertDistrict" parameterType="com.xstudio.school.domain.po.school.DistrictPo">
+        INSERT INTO basic_district(
+        	'id',
+                    	'name',
+                    	'ename',
+                    	'zipcode',
+                    	'cityid',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${name}',
+                        '${ename}',
+                        '${zipcode}',
+                        '${cityid}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

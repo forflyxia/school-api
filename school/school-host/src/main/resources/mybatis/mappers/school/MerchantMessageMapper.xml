@@ -1,0 +1,55 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       MerchantMessageMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.MerchantMessageMapper">
+
+	<select id="getMerchantMessages" resultType="com.xstudio.school.domain.po.school.MerchantMessagePo">
+		SELECT * FROM merchant_merchant_message WHERE status = 1;
+	</select>
+
+	<select id="getMerchantMessage" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.MerchantMessagePo">
+        SELECT * FROM merchant_merchant_message WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getMerchantMessagesByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.MerchantMessagePo">
+		SELECT * FROM merchant_merchant_message WHERE status = 1;
+	</select>
+    
+    <update id="updateMerchantMessage" parameterType="com.xstudio.school.domain.po.school.MerchantMessagePo">
+		UPDATE
+			merchant_merchant_message
+		SET
+        	id = '${id}',
+        	merchantid = '${merchantid}',
+        	message = '${message}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertMerchantMessage" parameterType="com.xstudio.school.domain.po.school.MerchantMessagePo">
+        INSERT INTO merchant_merchant_message(
+        	'id',
+                    	'merchantid',
+                    	'message',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${merchantid}',
+                        '${message}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

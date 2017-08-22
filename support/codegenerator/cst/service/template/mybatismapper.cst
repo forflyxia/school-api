@@ -1,5 +1,5 @@
 ﻿<%-- 
-Name:           repository.cst
+Name:           mybatis.cst
 Author:         hbxia
 Description:    
 --%>
@@ -21,62 +21,47 @@ Description:
  * Description:    this is auto genetated, don't change!
 *************************************************************************************************************************************************/
 
-package <%=Namespace%>.repository.<%=SourceTable.Database.Name %>;
+package <%=Namespace%>.repository.<%=SourceTable.Database.Name %>.mapper;
 
 import java.util.List;
 import java.util.ArrayList;
 import org.springframework.stereotype.Repository;
-import org.springframework.beans.factory.annotation.Autowired;
-import <%=Namespace%>.repository.<%=SourceTable.Database.Name %>.mapper.*;
 import <%=Namespace%>.domain.po.<%=SourceTable.Database.Name %>.*;
 
 @Repository
-public class <%=GetClassName(SourceTable) %>Repository {
-
-    @Autowired
-    private <%=GetClassName(SourceTable) %>Mapper mapper = null;
+public interface <%=GetClassName(SourceTable) %>Mapper {
 
     /**
      * getItem
      * @param id
      * @return
      */
-    public <%=GetClassName(SourceTable) %>Po get<%=GetClassName(SourceTable) %>(Integer id) {
-        return mapper.get<%=GetClassName(SourceTable) %>(id);
-    }
+    <%=GetClassName(SourceTable) %>Po get<%=GetClassName(SourceTable) %>(Integer id);
     
     /**
      * getItemByIds
      * @param ids
      * @return
      */
-    public List<<%=GetClassName(SourceTable) %>Po> get<%=GetClassName(SourceTable) %>sByIds(List<Integer> ids) {
-        return mapper.get<%=GetClassName(SourceTable) %>sByIds(ids);
-    }
+    List<<%=GetClassName(SourceTable) %>Po> get<%=GetClassName(SourceTable) %>sByIds(List<Integer> ids);
     
      /**
      * get list
      * @return
      */
-    public List<<%=GetClassName(SourceTable) %>Po> get<%=GetClassName(SourceTable) %>s() {
-        return mapper.get<%=GetClassName(SourceTable) %>s();
-    }
+    List<<%=GetClassName(SourceTable) %>Po> get<%=GetClassName(SourceTable) %>s();
     
     /**
      * update item
      * @param item
      * @return
      */
-    public boolean update<%=GetClassName(SourceTable) %>(<%=GetClassName(SourceTable) %>Po item) {
-        return mapper.update<%=GetClassName(SourceTable) %>(item);
-    }
+    boolean update<%=GetClassName(SourceTable) %>(<%=GetClassName(SourceTable) %>Po item);
     
     /**
      * insert item
      * @param item
      * @return
      */
-    public boolean insert<%=GetClassName(SourceTable) %>(<%=GetClassName(SourceTable) %>Po item) {
-        return mapper.insert<%=GetClassName(SourceTable) %>(item);
-    }
+    boolean insert<%=GetClassName(SourceTable) %>(<%=GetClassName(SourceTable) %>Po item);
 }

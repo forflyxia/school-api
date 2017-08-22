@@ -1,5 +1,5 @@
 ﻿<%-- 
-Name:           entity.csp.cst
+Name:           mybatisxml.csp.cst
 Author:         hbxia
 Description:    数据库实体模板
 --%>
@@ -21,7 +21,7 @@ Description:    数据库实体模板
     <propertySets>	
      <% foreach(SchemaExplorer.TableSchema SourceTable in SourceDatabase.Tables) { %>
         <% if(CanGenerated(SourceTable, TablePrefix, SpecifyTableName)) { %>
-          <propertySet name="<%=SourceTable.Name%>" output="<%=BaseDir %>\<%=Namespace %>.Service\<%=GetTablePrefix(SourceTable, true) %>\<%=GetClassName(SourceTable) %>Service.cs" template="..\..\support\codegenerator\cst\service\template\service.cst">
+          <propertySet name="<%=SourceTable.Name%>" output="src\main\resources\mybatis\mappers\<%=SourceDatabase.Name%>\<%=GetClassName(SourceTable) %>Mapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
               <property name="Namespace"><%=Namespace %></property>
               <property name="SourceTable">
                 <connectionString><%=SourceTable.Database.ConnectionString%></connectionString>

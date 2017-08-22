@@ -1,0 +1,55 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       CountryMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.CountryMapper">
+
+	<select id="getCountrys" resultType="com.xstudio.school.domain.po.school.CountryPo">
+		SELECT * FROM basic_country WHERE status = 1;
+	</select>
+
+	<select id="getCountry" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.CountryPo">
+        SELECT * FROM basic_country WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getCountrysByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.CountryPo">
+		SELECT * FROM basic_country WHERE status = 1;
+	</select>
+    
+    <update id="updateCountry" parameterType="com.xstudio.school.domain.po.school.CountryPo">
+		UPDATE
+			basic_country
+		SET
+        	id = '${id}',
+        	name = '${name}',
+        	ename = '${ename}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertCountry" parameterType="com.xstudio.school.domain.po.school.CountryPo">
+        INSERT INTO basic_country(
+        	'id',
+                    	'name',
+                    	'ename',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${name}',
+                        '${ename}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

@@ -1,0 +1,97 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       MerchantMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.MerchantMapper">
+
+	<select id="getMerchants" resultType="com.xstudio.school.domain.po.school.MerchantPo">
+		SELECT * FROM merchant_merchant WHERE status = 1;
+	</select>
+
+	<select id="getMerchant" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.MerchantPo">
+        SELECT * FROM merchant_merchant WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getMerchantsByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.MerchantPo">
+		SELECT * FROM merchant_merchant WHERE status = 1;
+	</select>
+    
+    <update id="updateMerchant" parameterType="com.xstudio.school.domain.po.school.MerchantPo">
+		UPDATE
+			merchant_merchant
+		SET
+        	id = '${id}',
+        	name = '${name}',
+        	shortname = '${shortname}',
+        	branch = '${branch}',
+        	logo = '${logo}',
+        	introduction = '${introduction}',
+        	contact = '${contact}',
+        	telphone = '${telphone}',
+        	mobliephone = '${mobliephone}',
+        	businesslicence = '${businesslicence}',
+        	legalperson = '${legalperson}',
+        	districtid = '${districtid}',
+        	address = '${address}',
+        	longitude = '${longitude}',
+        	latitude = '${latitude}',
+        	cash = '${cash}',
+        	point = '${point}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertMerchant" parameterType="com.xstudio.school.domain.po.school.MerchantPo">
+        INSERT INTO merchant_merchant(
+        	'id',
+                    	'name',
+                    	'shortname',
+                    	'branch',
+                    	'logo',
+                    	'introduction',
+                    	'contact',
+                    	'telphone',
+                    	'mobliephone',
+                    	'businesslicence',
+                    	'legalperson',
+                    	'districtid',
+                    	'address',
+                    	'longitude',
+                    	'latitude',
+                    	'cash',
+                    	'point',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${name}',
+                        '${shortname}',
+                        '${branch}',
+                        '${logo}',
+                        '${introduction}',
+                        '${contact}',
+                        '${telphone}',
+                        '${mobliephone}',
+                        '${businesslicence}',
+                        '${legalperson}',
+                        '${districtid}',
+                        '${address}',
+                        '${longitude}',
+                        '${latitude}',
+                        '${cash}',
+                        '${point}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

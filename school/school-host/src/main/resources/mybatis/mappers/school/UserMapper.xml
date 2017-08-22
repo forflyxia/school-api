@@ -1,0 +1,79 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       UserMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.UserMapper">
+
+	<select id="getUsers" resultType="com.xstudio.school.domain.po.school.UserPo">
+		SELECT * FROM user_user WHERE status = 1;
+	</select>
+
+	<select id="getUser" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.UserPo">
+        SELECT * FROM user_user WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getUsersByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.UserPo">
+		SELECT * FROM user_user WHERE status = 1;
+	</select>
+    
+    <update id="updateUser" parameterType="com.xstudio.school.domain.po.school.UserPo">
+		UPDATE
+			user_user
+		SET
+        	id = '${id}',
+        	username = '${username}',
+        	password = '${password}',
+        	nickname = '${nickname}',
+        	email = '${email}',
+        	usertype = '${usertype}',
+        	moblie = '${moblie}',
+        	sex = '${sex}',
+        	schoolid = '${schoolid}',
+        	cash = '${cash}',
+        	point = '${point}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertUser" parameterType="com.xstudio.school.domain.po.school.UserPo">
+        INSERT INTO user_user(
+        	'id',
+                    	'username',
+                    	'password',
+                    	'nickname',
+                    	'email',
+                    	'usertype',
+                    	'moblie',
+                    	'sex',
+                    	'schoolid',
+                    	'cash',
+                    	'point',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${username}',
+                        '${password}',
+                        '${nickname}',
+                        '${email}',
+                        '${usertype}',
+                        '${moblie}',
+                        '${sex}',
+                        '${schoolid}',
+                        '${cash}',
+                        '${point}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

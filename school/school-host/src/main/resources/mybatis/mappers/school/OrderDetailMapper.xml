@@ -1,0 +1,64 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       OrderDetailMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.OrderDetailMapper">
+
+	<select id="getOrderDetails" resultType="com.xstudio.school.domain.po.school.OrderDetailPo">
+		SELECT * FROM order_order_detail WHERE status = 1;
+	</select>
+
+	<select id="getOrderDetail" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.OrderDetailPo">
+        SELECT * FROM order_order_detail WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getOrderDetailsByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.OrderDetailPo">
+		SELECT * FROM order_order_detail WHERE status = 1;
+	</select>
+    
+    <update id="updateOrderDetail" parameterType="com.xstudio.school.domain.po.school.OrderDetailPo">
+		UPDATE
+			order_order_detail
+		SET
+        	id = '${id}',
+        	orderid = '${orderid}',
+        	productid = '${productid}',
+        	productsizeid = '${productsizeid}',
+        	unitprice = '${unitprice}',
+        	quantity = '${quantity}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertOrderDetail" parameterType="com.xstudio.school.domain.po.school.OrderDetailPo">
+        INSERT INTO order_order_detail(
+        	'id',
+                    	'orderid',
+                    	'productid',
+                    	'productsizeid',
+                    	'unitprice',
+                    	'quantity',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${orderid}',
+                        '${productid}',
+                        '${productsizeid}',
+                        '${unitprice}',
+                        '${quantity}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

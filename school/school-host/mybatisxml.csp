@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<codeSmith xmlns="http://www.codesmithtools.com/schema/csp.xsd">
+    <propertySets>	
+          <propertySet name="basic_city" output="src\main\resources\mybatis\mappers\school\CityMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_city</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="basic_country" output="src\main\resources\mybatis\mappers\school\CountryMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_country</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="basic_district" output="src\main\resources\mybatis\mappers\school\DistrictMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_district</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="basic_province" output="src\main\resources\mybatis\mappers\school\ProvinceMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>basic_province</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="image_image" output="src\main\resources\mybatis\mappers\school\ImageMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>image_image</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant" output="src\main\resources\mybatis\mappers\school\MerchantMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant_custom_category" output="src\main\resources\mybatis\mappers\school\MerchantCustomCategoryMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant_custom_category</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant_image" output="src\main\resources\mybatis\mappers\school\MerchantImageMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant_image</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="merchant_merchant_message" output="src\main\resources\mybatis\mappers\school\MerchantMessageMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>merchant_merchant_message</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="order_order" output="src\main\resources\mybatis\mappers\school\OrderMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>order_order</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="order_order_detail" output="src\main\resources\mybatis\mappers\school\OrderDetailMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>order_order_detail</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product" output="src\main\resources\mybatis\mappers\school\ProductMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_category" output="src\main\resources\mybatis\mappers\school\ProductCategoryMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_category</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_description" output="src\main\resources\mybatis\mappers\school\ProductDescriptionMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_description</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_image" output="src\main\resources\mybatis\mappers\school\ProductImageMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_image</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="product_product_size" output="src\main\resources\mybatis\mappers\school\ProductSizeMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>product_product_size</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="promotion_promotion" output="src\main\resources\mybatis\mappers\school\PromotionMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>promotion_promotion</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="promotion_promotion_ladder" output="src\main\resources\mybatis\mappers\school\PromotionLadderMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>promotion_promotion_ladder</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="school_school" output="src\main\resources\mybatis\mappers\school\SchoolMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>school_school</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="school_school_business" output="src\main\resources\mybatis\mappers\school\SchoolBusinessMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>school_school_business</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="school_school_news" output="src\main\resources\mybatis\mappers\school\SchoolNewsMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>school_school_news</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="user_user" output="src\main\resources\mybatis\mappers\school\UserMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>user_user</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="user_user_message" output="src\main\resources\mybatis\mappers\school\UserMessageMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>user_user_message</name>
+                </table>
+              </property>
+        </propertySet>
+          <propertySet name="user_user_task" output="src\main\resources\mybatis\mappers\school\UserTaskMapper.xml" template="..\..\support\codegenerator\cst\service\template\mybatisxml.cst">
+              <property name="Namespace">com.xstudio.school</property>
+              <property name="SourceTable">
+                <connectionString>Server=139.196.125.208;port=3306;UID=root;password=Xiaoyuan123456;database=school;</connectionString>
+                <providerType>SchemaExplorer.MySQLSchemaProvider,SchemaExplorer.MySQLSchemaProvider</providerType>
+                <table>
+                  <owner/>
+                  <name>user_user_task</name>
+                </table>
+              </property>
+        </propertySet>
+  </propertySets>
+</codeSmith>

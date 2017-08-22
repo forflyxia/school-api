@@ -1,0 +1,85 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       OrderMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.OrderMapper">
+
+	<select id="getOrders" resultType="com.xstudio.school.domain.po.school.OrderPo">
+		SELECT * FROM order_order WHERE status = 1;
+	</select>
+
+	<select id="getOrder" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.OrderPo">
+        SELECT * FROM order_order WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getOrdersByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.OrderPo">
+		SELECT * FROM order_order WHERE status = 1;
+	</select>
+    
+    <update id="updateOrder" parameterType="com.xstudio.school.domain.po.school.OrderPo">
+		UPDATE
+			order_order
+		SET
+        	id = '${id}',
+        	userid = '${userid}',
+        	contact = '${contact}',
+        	telphone = '${telphone}',
+        	mobliephone = '${mobliephone}',
+        	totalamount = '${totalamount}',
+        	reduction = '${reduction}',
+        	amountpaid = '${amountpaid}',
+        	promotionid = '${promotionid}',
+        	promotionladderid = '${promotionladderid}',
+        	schoolid = '${schoolid}',
+        	deliveryaddress = '${deliveryaddress}',
+        	remark = '${remark}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertOrder" parameterType="com.xstudio.school.domain.po.school.OrderPo">
+        INSERT INTO order_order(
+        	'id',
+                    	'userid',
+                    	'contact',
+                    	'telphone',
+                    	'mobliephone',
+                    	'totalamount',
+                    	'reduction',
+                    	'amountpaid',
+                    	'promotionid',
+                    	'promotionladderid',
+                    	'schoolid',
+                    	'deliveryaddress',
+                    	'remark',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${userid}',
+                        '${contact}',
+                        '${telphone}',
+                        '${mobliephone}',
+                        '${totalamount}',
+                        '${reduction}',
+                        '${amountpaid}',
+                        '${promotionid}',
+                        '${promotionladderid}',
+                        '${schoolid}',
+                        '${deliveryaddress}',
+                        '${remark}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>

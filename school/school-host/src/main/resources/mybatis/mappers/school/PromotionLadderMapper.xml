@@ -1,0 +1,61 @@
+﻿/************************************************************************************************************************************************
+ * FileName:       PromotionLadderMapper.xml
+ * Author:         hbxia
+ * Description:    this is auto genetated, don't change!
+*************************************************************************************************************************************************/
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xstudio.school.repository.mapper.school.PromotionLadderMapper">
+
+	<select id="getPromotionLadders" resultType="com.xstudio.school.domain.po.school.PromotionLadderPo">
+		SELECT * FROM promotion_promotion_ladder WHERE status = 1;
+	</select>
+
+	<select id="getPromotionLadder" parameterType="Integer" resultType="com.xstudio.school.domain.po.school.PromotionLadderPo">
+        SELECT * FROM promotion_promotion_ladder WHERE id = #{id} AND status = 1;
+	</select>
+    
+    <select id="getPromotionLaddersByIds" parameterType="String" resultType="com.xstudio.school.domain.po.school.PromotionLadderPo">
+		SELECT * FROM promotion_promotion_ladder WHERE status = 1;
+	</select>
+    
+    <update id="updatePromotionLadder" parameterType="com.xstudio.school.domain.po.school.PromotionLadderPo">
+		UPDATE
+			promotion_promotion_ladder
+		SET
+        	id = '${id}',
+        	name = '${name}',
+        	promotionid = '${promotionid}',
+        	totalamount = '${totalamount}',
+        	reduction = '${reduction}',
+        	status = '${status}',
+        	createtime = '${createtime}',
+        	updatetime = '${updatetime}',
+		WHERE
+            id = ${id}
+    </update>
+
+	<insert id="insertPromotionLadder" parameterType="com.xstudio.school.domain.po.school.PromotionLadderPo">
+        INSERT INTO promotion_promotion_ladder(
+        	'id',
+                    	'name',
+                    	'promotionid',
+                    	'totalamount',
+                    	'reduction',
+                    	'status',
+                    	'createtime',
+                    	'updatetime'
+            )
+		VALUES (
+            '${id}',
+                        '${name}',
+                        '${promotionid}',
+                        '${totalamount}',
+                        '${reduction}',
+                        '${status}',
+                        '${createtime}',
+                        '${updatetime}'
+            );
+	</insert>
+</mapper>
