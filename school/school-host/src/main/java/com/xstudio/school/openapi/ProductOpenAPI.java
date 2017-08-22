@@ -1,8 +1,9 @@
 package com.xstudio.school.openapi;
 
 import com.xstudio.school.contract.*;
-import com.xstudio.school.contract.Shop.ShopDTO;
+import com.xstudio.school.contract.shop.ShopDTO;
 import com.xstudio.school.contract.category.CategoryDTO;
+import com.xstudio.school.service.apiimpl.SearchProductByShopService;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -20,14 +21,7 @@ public class ProductOpenAPI {
     @Consumes(MediaType.APPLICATION_JSON)
     public SearchProductByShopResponse SearchProductByShop(SearchProductByShopRequest request)
     {
-        SearchProductByShopResponse response=new SearchProductByShopResponse();
-        ShopDTO shopDTO=new ShopDTO();
-        shopDTO.setShopId(request.getShopId());
-        shopDTO.setMinimumDeliveryAmount(20);
-        shopDTO.setShopName("便利店");
-        response.setShopDTO(shopDTO);
-        response.setIsSuccess(true);
-        return response;
+        return new SearchProductByShopService().SearchProductByShop(request);
     }
     @POST
     @Path("/SearchCategory")

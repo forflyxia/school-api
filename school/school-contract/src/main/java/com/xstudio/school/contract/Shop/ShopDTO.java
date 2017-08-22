@@ -1,4 +1,4 @@
-package com.xstudio.school.contract.Shop;
+package com.xstudio.school.contract.shop;
 
 /**
  * Created by wangqc on 2017/8/6.

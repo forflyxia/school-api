@@ -1,4 +1,4 @@
-package com.xstudio.school.contract.OrderManage;
+package com.xstudio.school.contract.order;
 
 /**
  * Created by wangqc on 2017/8/6.

@@ -1,6 +1,6 @@
 package com.xstudio.school.contract;
 
-import com.xstudio.school.contract.OrderManage.DeliveryDTO;
+import com.xstudio.school.contract.order.DeliveryDTO;
 import com.xstudio.school.contract.base.BaseResponse;
 
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package com.xstudio.school.contract.OrderManage;
+package com.xstudio.school.contract.order;
 
 import com.xstudio.school.contract.product.ProductDTO;
 

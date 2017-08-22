@@ -41,7 +41,7 @@ public class <%=GetClassName(SourceTable) %>Repository {
      * @param id
      * @return
      */
-    public <%=GetClassName(SourceTable) %>Po get<%=GetClassName(SourceTable) %>(Integer id) {
+    public <%=GetClassName(SourceTable) %> get<%=GetClassName(SourceTable) %>(Integer id) {
         return mapper.get<%=GetClassName(SourceTable) %>(id);
     }
     

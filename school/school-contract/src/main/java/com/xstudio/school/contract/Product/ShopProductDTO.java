@@ -1,6 +1,6 @@
 package com.xstudio.school.contract.product;
 
-import com.xstudio.school.contract.Shop.ShopDTO;
+import com.xstudio.school.contract.shop.ShopDTO;
 
 /**
  * Created by wangqc on 2017/8/13.

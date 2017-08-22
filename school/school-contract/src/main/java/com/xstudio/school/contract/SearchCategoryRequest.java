@@ -1,6 +1,6 @@
 package com.xstudio.school.contract;
 
-import com.xstudio.school.contract.Shop.ShopDTO;
+import com.xstudio.school.contract.shop.ShopDTO;
 import com.xstudio.school.contract.base.BaseRequest;
 import com.xstudio.school.contract.category.CategoryDTO;
 

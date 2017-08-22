@@ -2,7 +2,7 @@ package com.xstudio.school.contract;
 
 import com.xstudio.school.contract.base.BaseResponse;
 import com.xstudio.school.contract.product.ProductDTO;
-import com.xstudio.school.contract.Shop.ShopDTO;
+import com.xstudio.school.contract.shop.ShopDTO;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.xstudio.school.contract;
 
-import com.xstudio.school.contract.OrderManage.PaymentDTO;
+import com.xstudio.school.contract.order.PaymentDTO;
 import com.xstudio.school.contract.base.BaseRequest;
 
 import java.util.List;

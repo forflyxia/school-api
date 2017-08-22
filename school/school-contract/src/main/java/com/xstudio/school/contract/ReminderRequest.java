@@ -11,6 +11,8 @@ public class ReminderRequest extends BaseRequest{
      */
     private Long orderId;
     public Long getOrderId() {
+
+
         return orderId;
     }
     public void setOrderId(Long orderId) {

@@ -14,9 +14,15 @@
 
   <dependencies>
 
+    <!--self-->
     <dependency>
       <groupId>com.xstudio.school</groupId>
       <artifactId>school-contract</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.xstudio.school</groupId>
+      <artifactId>school-repository</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
 
@@ -53,5 +59,6 @@
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
     </dependency>
+
   </dependencies>
 </project>

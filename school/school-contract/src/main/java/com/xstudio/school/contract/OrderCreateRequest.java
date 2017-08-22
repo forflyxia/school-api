@@ -1,8 +1,8 @@
 package com.xstudio.school.contract;
 
-import com.xstudio.school.contract.OrderManage.DeliveryDTO;
-import com.xstudio.school.contract.OrderManage.ProductInfo;
-import com.xstudio.school.contract.OrderManage.UserDTO;
+import com.xstudio.school.contract.order.DeliveryDTO;
+import com.xstudio.school.contract.order.ProductInfo;
+import com.xstudio.school.contract.order.UserDTO;
 import com.xstudio.school.contract.base.BaseRequest;
 import com.xstudio.school.contract.coupon.CouponDTO;
 

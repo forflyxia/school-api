@@ -1,4 +1,4 @@
-package com.xstudio.school.domain;
+package com.xstudio.school.service;
 
 /**
  * Created by hbxia on 2017/7/6.
