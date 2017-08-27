@@ -48,13 +48,47 @@ public class ShopDTO {
 
 
     /*
-    position
+    Address
     */
-    private Integer position;
-    public Integer getProductCategory() {
-        return position;
+    private String address;
+    public String getAddress() {
+        return address;
     }
-    public void setProductCategory(Integer position) {
-        this.position = position;
+    public void setAddress(String address) {
+        this.address = address;
     }
+
+    /*
+    City
+    */
+    private Integer city;
+    public Integer getCity() {
+        return city;
+    }
+    public void setCity(Integer city) {
+        this.city = city;
+    }
+
+    /*
+  announcement
+  */
+    private String announcement;
+    public String getAnnouncement() {
+        return announcement;
+    }
+    public void setAnnouncement(String announcement) {
+        this.address = announcement;
+    }
+
+    /*
+    business hours
+    */
+    private String businessHours;
+    public String getBusinessHours() {
+        return businessHours;
+    }
+    public void setBusinessHours(String businessHours) {
+        this.businessHours = businessHours;
+    }
+
 }

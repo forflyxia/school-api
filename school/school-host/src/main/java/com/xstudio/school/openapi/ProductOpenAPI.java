@@ -1,7 +1,6 @@
 package com.xstudio.school.openapi;
 
 import com.xstudio.school.contract.*;
-import com.xstudio.school.contract.shop.ShopDTO;
 import com.xstudio.school.contract.category.CategoryDTO;
 import com.xstudio.school.service.apiimpl.SearchProductByShopService;
 
@@ -63,6 +62,73 @@ public class ProductOpenAPI {
     public SearchProductResponse SearchProduct(SearchProductRequest request)
     {
         SearchProductResponse response=new SearchProductResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/AddProduct")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public AddProductResponse AddProduct(AddProductRequest request)
+    {
+        AddProductResponse response=new AddProductResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/UpdateProduct")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public UpdateProductResponse UpdateProduct(UpdateProductRequest request)
+    {
+        UpdateProductResponse response=new UpdateProductResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/DeleteProduct")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public DeleteProductResponse DeleteProduct(DeleteProductRequest request)
+    {
+        DeleteProductResponse response=new DeleteProductResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+
+    @POST
+    @Path("/AddCategory")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public AddCategoryResponse AddCategory(AddCategoryRequest request)
+    {
+        AddCategoryResponse response=new AddCategoryResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/UpdateCategory")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public UpdateCategoryResponse UpdateCategory(UpdateCategoryRequest request)
+    {
+        UpdateCategoryResponse response=new UpdateCategoryResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/DeleteCategory")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public DeleteCategoryResponse DeleteCategory(DeleteCategoryRequest request)
+    {
+        DeleteCategoryResponse response=new DeleteCategoryResponse();
         response.setIsSuccess(true);
         return response;
     }

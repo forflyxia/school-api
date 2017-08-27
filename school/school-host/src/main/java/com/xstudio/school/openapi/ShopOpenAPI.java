@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
  * Created by wangqc on 2017/8/13.
  */
 @Path("/ShopOrderManage")
-public class ShopOrderManageOpenAPI {
+public class ShopOpenAPI {
     @POST
     @Path("/Query")
     @Produces(MediaType.APPLICATION_JSON)
@@ -37,6 +37,39 @@ public class ShopOrderManageOpenAPI {
     public OrderReceivingResponse OrderReceiving(OrderReceivingRequest request)
     {
         OrderReceivingResponse response=new OrderReceivingResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/AddShop")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public AddShopResponse AddShop(AddShopRequest request)
+    {
+        AddShopResponse response=new AddShopResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/UpdateShop")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public UpdateShopResponse UpdateShop(UpdateShopRequest request)
+    {
+        UpdateShopResponse response=new UpdateShopResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/DeleteShop")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public DeleteShopResponse DeleteShop(DeleteShopRequest request)
+    {
+        DeleteShopResponse response=new DeleteShopResponse();
         response.setIsSuccess(true);
         return response;
     }

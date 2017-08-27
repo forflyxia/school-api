@@ -1,11 +1,8 @@
 package com.xstudio.school.openapi;
 
-import com.xstudio.school.contract.SchoolHomePageResponse;
+import com.xstudio.school.contract.*;
 
-import javax.ws.rs.FormParam;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
 /**
@@ -21,6 +18,38 @@ public class SchoolOpenApi {
     {
         SchoolHomePageResponse response=new SchoolHomePageResponse();
 
+        response.setIsSuccess(true);
+        return response;
+    }
+    @POST
+    @Path("/AddSchool")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public AddSchoolResponse AddSchool(AddSchoolRequest request)
+    {
+        AddSchoolResponse response=new AddSchoolResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/UpdateSchool")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public UpdateShopResponse UpdateSchool(UpdateSchoolRequest request)
+    {
+        UpdateShopResponse response=new UpdateShopResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
+
+    @POST
+    @Path("/DeleteSchool")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public DeleteSchoolResponse DeleteSchool(DeleteSchoolRequest request)
+    {
+        DeleteSchoolResponse response=new DeleteSchoolResponse();
         response.setIsSuccess(true);
         return response;
     }

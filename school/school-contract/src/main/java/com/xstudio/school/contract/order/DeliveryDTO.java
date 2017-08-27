@@ -1,5 +1,7 @@
 package com.xstudio.school.contract.order;
 
+import java.util.Calendar;
+
 /**
  * Created by wangqc on 2017/8/6.
  */
@@ -56,5 +58,17 @@ public class DeliveryDTO {
     public void setDeliveryPrice(double deliveryPrice) {
         this.deliveryPrice = deliveryPrice;
     }
+
+    /*
+    delivery time
+     */
+    private Calendar deliveryTime;
+    public Calendar getDeliveryTime() {
+        return deliveryTime;
+    }
+    public void setDeliveryTime(Calendar deliveryTime) {
+        this.deliveryTime = deliveryTime;
+    }
+
 
 }

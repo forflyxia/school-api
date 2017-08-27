@@ -40,5 +40,14 @@ public class WorkerOpenAPI {
         response.setIsSuccess(true);
         return response;
     }
-
+    @POST
+    @Path("/DeliveryConfirm")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public DeliveryConfirmResponse DeliveryConfirm(DeliveryConfirmRequest request)
+    {
+        DeliveryConfirmResponse response=new DeliveryConfirmResponse();
+        response.setIsSuccess(true);
+        return response;
+    }
 }
